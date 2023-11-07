@@ -10,14 +10,14 @@ Ludus Nexus specializes in the sale of gaming consoles, video games, and gaming 
 
 # Original Design Concept
 
-The following design is the initial concept and starting point for the Ludus Nexus project. Since an agile development process is being used, the final implementation of this site may differ from the original design concept.
+The following design is the initial concept and starting point for the Ludus Nexus project. Since an agile development process is being used, the final implementation of this site may differ from the original design concept. The design in Figma will showcase the main user journey, minor interactions will be detailed during the development phase.
 
 The following websites have been used as inspiration for the design.
-1. [inet](https://www.inet.se/)
-2. [webhallen](https://www.webhallen.com/)
-3. [Nintendo](https://www.nintendo.se/)
-4. [Playstation](https://www.playstation.com/sv-se/)
-5. [Xbox](https://www.xbox.com/sv-SE)
+- [inet](https://www.inet.se/)
+- [webhallen](https://www.webhallen.com/)
+- [Nintendo](https://www.nintendo.se/)
+- [Playstation](https://www.playstation.com/sv-se/)
+- [Xbox](https://www.xbox.com/sv-SE)
 
 I have chosen the following color palette from [coolors](https://coolors.co/)
 ![color palette](./assets/img/color-palette.JPG)
@@ -42,6 +42,17 @@ The palette also subtly nods to the color schemes of prominent gaming consoles, 
 - White color is being used for the background-color of the events section and for the items.
 - Navy Blue color is being used for the background-color of search bars, hr tag and checkboxes.
 - Orange color is being used for buttons.
+
+## Console Color Integration
+
+Our design embraces the vibrant identities of major gaming consoles by integrating their signature colors into our site's interface. This strategic use of color serves to enhance user navigation and provide an instantly familiar experience for fans of each platform:
+
+- **PlayStation Blue (#0070CC)**,
+- **Xbox Green (#107B10)**, and
+- **Nintendo Red (#E60012)**
+
+are used consistently for interface elements related to their respective console sections, such as navigational cues, background highlights, and link colors. This not only makes for a visually cohesive environment but also leverages color psychology to foster brand connectivity and user engagement.
+
 
 ## Fonts
 - The Griffy font has been chosen for the sites title name, this is to stand out from other sites and give a memorable impression on the user.
