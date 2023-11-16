@@ -20,6 +20,7 @@ The following websites have been used as inspiration for the design.
 - [Xbox](https://www.xbox.com/sv-SE)
 
 I have chosen the following color palette from [coolors](https://coolors.co/)
+
 ![color palette](./assets/img/color-palette.JPG)
 
 The chosen color palette was carefully selected to provide an optimal balance between visual appeal and user-friendly experience. The high contrast between black and white ensures excellent readability and accessibility. The use of grey offers a neutral background for various elements, preventing visual fatigue during prolonged browsing sessions.
@@ -45,7 +46,7 @@ The palette also subtly nods to the color schemes of prominent gaming consoles, 
 
 ## Console Color Integration
 
-Our design embraces the vibrant identities of major gaming consoles by integrating their signature colors into our site's interface. This strategic use of color serves to enhance user navigation and provide an instantly familiar experience for fans of each platform:
+The design embraces the vibrant identities of major gaming consoles by integrating their signature colors into our site's interface. This strategic use of color serves to enhance user navigation and provide an instantly familiar experience for fans of each platform:
 
 - **PlayStation Blue (#0070CC)**,
 - **Xbox Green (#107B10)**, and
@@ -85,3 +86,16 @@ The database schema depicted below outlines the foundational structure of the Lu
 8. **NewsArticles**: Manages the display of news articles on the platform. It stores information about each article. This table is key for keeping users informed about the latest news in the gaming world, enhancing the platform's content richness.
 
 9. **WishList**: Allows users to save products to a personal wishlist for future reference. It links to both **Users** and **Products** tables, enabling users to easily access and manage a list of products they are interested in purchasing or reviewing later.
+
+# Facebook Page
+
+We are excited to introduce the official Facebook page for Ludus Nexus! This is where you'll get updates on the latest in gaming and find out about special promotions for PlayStation, Xbox, and Nintendo games and gear. Stay connected and catch the best deals by following us on our Facebook page.
+
+[Click here to visit Facebook page](https://www.facebook.com/profile.php?id=61553536475742)
+
+Below are images showcasing the Facebook page and the dedicated business Gmail account, which is set up for customer support and inquiries:
+
+![Facebook images](./assets/img/facebook-page-p1.JPG)
+![Facebook images](./assets/img/facebook-page-p2.JPG)
+![Facebook images](./assets/img/facebook-page-p3.JPG)
+![Gmail images](./assets/img/gmail-account.JPG)
