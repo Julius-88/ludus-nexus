@@ -10,50 +10,55 @@ Ludus Nexus specializes in the sale of gaming consoles, video games, and gaming 
 
 # Original Design Concept
 
-The following design is the initial concept and starting point for the Ludus Nexus project. Since an agile development process is being used, the final implementation of this site may differ from the original design concept. The design in Figma will showcase the main user journey, minor interactions will be detailed during the development phase.
+The following design is the initial concept and starting point for the Ludus Nexus project. As we are using an agile development process, the final implementation of this site may differ from the original design concept. This flexibility allows us to adapt and refine the design based on user feedback and evolving project requirements.
 
-The following websites have been used as inspiration for the design.
+The design in Figma, which can be viewed [here](https://www.figma.com/file/hGDWtjoOtL00DrgiPRRoCf/Ludus-Nexus?type=design&node-id=0%3A1&mode=design&t=1MBSYz7Agfgsb057-1), showcases the main user journey, with minor interactions detailed during the development phase. You can explore the basic idea of how the website should work on PC [here](https://www.figma.com/proto/hGDWtjoOtL00DrgiPRRoCf/Ludus-Nexus?type=design&node-id=102-2&t=lmn1KUorCpUhJ1QG-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=102%3A2&show-proto-sidebar=1), and see what it would look like on mobile [here](https://www.figma.com/proto/hGDWtjoOtL00DrgiPRRoCf/Ludus-Nexus?type=design&node-id=548-537&t=lmn1KUorCpUhJ1QG-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=548%3A537&show-proto-sidebar=1).
+
+## Inspiration
+
+The design draws inspiration from prominent gaming and technology websites, including:
+
 - [inet](https://www.inet.se/)
 - [webhallen](https://www.webhallen.com/)
 - [Nintendo](https://www.nintendo.se/)
 - [Playstation](https://www.playstation.com/sv-se/)
 - [Xbox](https://www.xbox.com/sv-SE)
+- [Youtube](https://www.youtube.com/)
 
-I have chosen the following color palette from [coolors](https://coolors.co/)
+These sources were instrumental in shaping the aesthetic and functional aspects of Ludus Nexus, providing insights into successful layouts and features that resonate with gaming audiences.
 
-![color palette](./assets/img/color-palette.JPG)
+## Color Palette
 
-The chosen color palette was carefully selected to provide an optimal balance between visual appeal and user-friendly experience. The high contrast between black and white ensures excellent readability and accessibility. The use of grey offers a neutral background for various elements, preventing visual fatigue during prolonged browsing sessions.
+The selected color palette reflects the essence of gaming culture, balancing visual appeal with functionality:
 
-The navy blue reflects the sophistication and depth associated with advanced technology and gaming, promoting user trust and engagement. Meanwhile, the striking orange for buttons is not only stylish but also creates a great contrast no matter the background.
+### Default setting - Dark Mode
+- Background: Black (000000) for depth and focus.
+- Text & Items Background: White (FFFFFF) for stark contrast and readability.
+- Placeholder Text & HR: Grey (E5E5E5) for subtlety and clarity.
+- Input Fields: Eerie Black (242526) for a sleek, modern look.
 
-The palette also subtly nods to the color schemes of prominent gaming consoles, providing a sense of familiarity for seasoned gamers while maintaining a unique identity for Ludus Nexus. This strategic choice in colors supports our aim to establish a brand that stands out in the competitive gaming marketplace while resonating with our core demographic.
+![Dark Mode](./assets/img/dark-mode.png)
 
+### Light Mode
+- Background: Grey (E5E5E5) for a softer, eye-friendly backdrop.
+- Text: Black (000000) for sharp contrast and focus on content.
+- Items & Input fields: White (FFFFFF) for a clean and clear interface.
+- Placeholder Text & HR: Black Olive (42413C) for a subtle yet distinct appearance.
 
-## Default setting - Black
-- Black color is being used for the background-color of the site.
-- White color is being used for all the text and background-color for items.
-- Grey color is being used for checkboxes and for the hr tag.
-- Navy Blue color is being used for the background-color of the input boxes and the search box.
-- Orange color is being used for buttons.
+![Light Mode](./assets/img/light-mode.png)
 
-## White setting
-- Grey color is being used for the background-color of the site.
-- Black color is being used for all the text.
-- White color is being used for the background-color of the events section and for the items.
-- Navy Blue color is being used for the background-color of search bars, hr tag and checkboxes.
-- Orange color is being used for buttons.
+### CTA
+- CTA Colors: Veronica (9747FF) as the primary color, transitioning to Amethyst (A367F2) on hover for interactivity.
 
-## Console Color Integration
+### Console Color Integration
 
-The design embraces the vibrant identities of major gaming consoles by integrating their signature colors into our site's interface. This strategic use of color serves to enhance user navigation and provide an instantly familiar experience for fans of each platform:
+The design embraces the vibrant identities of the selected gaming consoles by integrating their signature colors into our site's interface, enhancing user navigation and providing an instantly familiar experience for fans of each platform:
 
-- **PlayStation Blue (#0070CC)**,
-- **Xbox Green (#107B10)**, and
-- **Nintendo Red (#E60012)**
+- PlayStation Blue (#0070CC) for primary display, transitioning to PlayStation Hover Blue (#218DE5) upon hover.
+- Xbox Green (#107B10) for primary display, transitioning to Xbox Hover Green (#228822) upon hover.
+- Nintendo Red (#E60012) for primary display, transitioning to Nintendo Hover Red (#E71B2B) upon hover.
 
-are used consistently for interface elements related to their respective console sections, such as navigational cues, background highlights, and link colors. This not only makes for a visually cohesive environment but also leverages color psychology to foster brand connectivity and user engagement.
-
+![CTA and Console Colors](./assets/img/cta-console-colors.png)
 
 ## Fonts
 - The Griffy font has been chosen for the sites title name, this is to stand out from other sites and give a memorable impression on the user.
@@ -61,13 +66,10 @@ are used consistently for interface elements related to their respective console
 - The Didact Gothic font has been chosen for the Nintendo title, this is because this font resembles the Nintendo font the most.
 - The Raleway font has been chosen for the overall content. It seems to match well with all the font types while still standing out.
 
-The design in figma can be seen here [Ludus Nexus Design idea](https://www.figma.com/file/hGDWtjoOtL00DrgiPRRoCf/Ludus-Nexus?type=design&node-id=0%3A1&mode=design&t=1MBSYz7Agfgsb057-1)
-
 # Database Schema
 The database schema depicted below outlines the foundational structure of the Ludus Nexus e-commerce platform, detailing how various data elements such as users, products, and events are interconnected. This schema serves as a blueprint for the database's initial development, with the understanding that alterations may occur as the project evolves to accommodate new requirements or improvements.
 
 ![Database Schema](./assets/img/database-schema.JPG)
-
 
 1. **Users**: This table holds essential data about the users of the platform, such as their login credentials and contact information. It's the central point for managing user accounts and is linked to **Orders**, **EventNotifications**, and **WishList**. Allowing for functionalities like tracking order history, managing event interests, and saving favorite products.
 
