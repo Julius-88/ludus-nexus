@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="{% static 'css/global-styles.css' %}">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/d5722e680c.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %} ">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest">
     {% block extra_css %}{% endblock %}
     <title>Ludus Nexus {% block extra_title %}{% endblock %}</title>
 </head>
