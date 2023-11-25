@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Griffy&family=Poppins:ital@1&family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Raleway, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: griffy, sans-serif;
+}
