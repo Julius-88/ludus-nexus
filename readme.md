@@ -101,3 +101,10 @@ Below are images showcasing the Facebook page and the dedicated business Gmail a
 ![Facebook images](./assets/img/facebook-page-p2.JPG)
 ![Facebook images](./assets/img/facebook-page-p3.JPG)
 ![Gmail images](./assets/img/gmail-account.JPG)
+
+
+# Resources
+- **Favicon.io**: Used for generating favicon images. [favicon.io](https://favicon.io/favicon-converter/)
+- **FontAwesome**: Provides various icons used across the site. [fontawesome.com](https://fontawesome.com/)
+- **Bootstrap v4.6**: Primary CSS framework used for designing the website. [getbootstrap.com](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- **JQuery**: Utilized for JavaScript coding enhancements. [jquery.com](https://jquery.com/)
