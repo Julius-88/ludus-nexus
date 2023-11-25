@@ -25,15 +25,50 @@
     <title>Ludus Nexus {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body>
-    <header class="container-fluid">
+<body class="dark-mode" aria-labelledby="navigation-bar">
+    <header>
         <h1>LUDUS NEXUS</h1>
     </header>
-    <nav>
-        <ul>
-            <li><i class="fab fa-playstation"></i>Playstation</li>
-            <li>Xbox</li>
-            <li>Nintendo</li>
+    <nav class="navbar navbar-expand justify-content-center" id="navigation-bar">
+        <ul class="navbar-nav">
+
+            <li class="nav-item"> <a href="#" class="nav-link">
+                    <i class="fas fa-adjust"
+                        aria-label="Click here to change website colors from dark to light and back" title="theme"></i>
+                </a>
+            </li>
+            <li class="nav-item"> <a href="{% url 'home' %}" class="nav-link">
+                    <i class="fas fa-home" aria-label="Click here to go to home page" title="home"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'playstation' %}" id="playstation" class="nav-link"
+                    aria-label="Click here to go to the playstation page" title="playstation">
+                    Playstation
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'xbox' %}" id="xbox" class="nav-link" aria-label="Click here to go to the xbox page"
+                    title="xbox">
+                    Xbox
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'nintendo' %}" id="nintendo" class="nav-link"
+                    aria-label="Click here to go to the nintendo page" title="nintendo">
+                    Nintendo
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" aria-label="Click here to the login page" title="login">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" aria-label="Click here to go to the shopping cart" title="shopping cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
         </ul>
     </nav>
     {% block content %}

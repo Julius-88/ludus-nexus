@@ -15,3 +15,18 @@ h5,
 h6 {
     font-family: griffy, sans-serif;
 }
+
+body {
+    min-width: 320px;
+}
+
+/*---------- Dark Mode Color Schema-------------*/
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: white;
+}
