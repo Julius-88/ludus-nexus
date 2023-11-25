@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9#eq-cnlynfrb)a=fvv@)2wu^m69qlz57wvz$a-)-ep)u*jy_y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-julius88-ludusnexus-cqmw4efqdn2.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['8000-julius88-ludusnexus-7hvwcms4hwh.ws-eu106.gitpod.io']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,10 @@ ROOT_URLCONF = 'ludus_nexus.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
