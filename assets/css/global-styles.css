@@ -24,6 +24,8 @@ a:hover {
     color: inherit;
 }
 
+/* ---------------Navbar -----------------------*/
+
 /*---------- Dark Mode Color Schema-------------*/
 
 .dark-mode {
@@ -31,28 +33,52 @@ a:hover {
     color: white;
 }
 
-.hr-darkmode {
+hr {
     border: 3px solid #E5E5E5;
 }
 
-a {
+.nav-link {
     color: white;
 }
 
-#theme-switcher {
-    background-color: transparent;
-    border: 1px solid transparent;
+
+
+/*---------- Light Mode Color Schema-------------*/
+
+.light-mode {
+    background-color: #E5E5E5;
+    color: black;
+}
+
+.light-mode hr {
+    border: 3px solid #42413C;
+}
+
+.light-mode #home-icon,
+.light-mode #login-icon,
+.light-mode #shopping-cart-icon,
+.light-mode #theme-switcher {
+    background-color: black;
+}
+
+.light-mode .navbar-toggler {
+    background-color: black;
     color: white;
 }
 
-#theme-switcher:hover {
+.light-mode .navbar-toggler:hover {
     background-color: white;
     color: black;
 }
 
-/* ---------------Navbar -----------------------*/
+/* ---------------Navbar Toggler -----------------------*/
 .navbar-toggler {
     background-color: white;
+}
+
+.navbar-toggler:hover {
+    background-color: black;
+    color: white;
 }
 
 /*------------ Playstation -------------------- */
@@ -117,6 +143,19 @@ a {
 }
 
 #shopping-cart-icon:hover {
+    background-color: white;
+    color: black;
+}
+
+/*------------ theme switcher Icon -------------------- */
+
+#theme-switcher {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+}
+
+#theme-switcher:hover {
     background-color: white;
     color: black;
 }
