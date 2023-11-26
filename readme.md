@@ -60,6 +60,11 @@ The design embraces the vibrant identities of the selected gaming consoles by in
 
 ![CTA and Console Colors](./assets/img/cta-console-colors.png)
 
+# Design Updates
+These updates are part of our continuous effort to improve user experience and website aesthetics.
+1. **Mobile View Navbar:** Implemented hamburger menu functionality for a more user-friendly experience in mobile view. This replaced the previous design of circular navigation links.
+2. **Navigation Menu Color in Light Mode:** Adjusted the color scheme of the navigation menu in light mode to ensure a more seamless integration with the overall page design. 
+
 ## Fonts
 - The Griffy font has been chosen for the sites title name, this is to stand out from other sites and give a memorable impression on the user.
 - The Poppins font has been chosen for Playstation and Xbox titles, this is because this font resembles these branches font the most.
