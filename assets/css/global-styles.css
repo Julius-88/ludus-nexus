@@ -4,7 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -13,11 +13,15 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: griffy, sans-serif;
+    font-family: 'Griffy', sans-serif;
 }
 
 body {
     min-width: 320px;
+}
+
+a:hover {
+    color: inherit;
 }
 
 /*---------- Dark Mode Color Schema-------------*/
@@ -27,6 +31,92 @@ body {
     color: white;
 }
 
+.hr-darkmode {
+    border: 3px solid #E5E5E5;
+}
+
 a {
     color: white;
+}
+
+#theme-switcher {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+}
+
+#theme-switcher:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ---------------Navbar -----------------------*/
+.navbar-toggler {
+    background-color: white;
+}
+
+/*------------ Playstation -------------------- */
+
+.playstation {
+    background-color: #0070CC;
+    font-family: 'Poppins', sans-serif;
+}
+
+.playstation:hover {
+    background-color: #218DE5;
+}
+
+/*------------ Xbox -------------------- */
+
+.xbox {
+    background-color: #107C10;
+    font-family: 'Poppins', sans-serif;
+}
+
+.xbox:hover {
+    background-color: #228822;
+}
+
+/*------------ Nintendo -------------------- */
+
+.nintendo {
+    background-color: #E60012;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.nintendo:hover {
+    background-color: #E71B2B;
+}
+
+/*------------ Home Icon -------------------- */
+
+#home-icon:hover {
+    background-color: white;
+    color: black;
+}
+
+/*------------ Login Icon -------------------- */
+
+#login-icon {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+}
+
+#login-icon:hover {
+    background-color: white;
+    color: black;
+}
+
+/*------------ Shopping Cart Icon -------------------- */
+
+#shopping-cart-icon {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+}
+
+#shopping-cart-icon:hover {
+    background-color: white;
+    color: black;
 }

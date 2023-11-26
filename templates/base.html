@@ -29,48 +29,58 @@
     <header>
         <h1>LUDUS NEXUS</h1>
     </header>
-    <nav class="navbar navbar-expand justify-content-center" id="navigation-bar">
-        <ul class="navbar-nav">
-
-            <li class="nav-item"> <a href="#" class="nav-link">
-                    <i class="fas fa-adjust"
-                        aria-label="Click here to change website colors from dark to light and back" title="theme"></i>
-                </a>
-            </li>
-            <li class="nav-item"> <a href="{% url 'home' %}" class="nav-link">
-                    <i class="fas fa-home" aria-label="Click here to go to home page" title="home"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="{% url 'playstation' %}" id="playstation" class="nav-link"
-                    aria-label="Click here to go to the playstation page" title="playstation">
-                    Playstation
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="{% url 'xbox' %}" id="xbox" class="nav-link" aria-label="Click here to go to the xbox page"
-                    title="xbox">
-                    Xbox
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="{% url 'nintendo' %}" id="nintendo" class="nav-link"
-                    aria-label="Click here to go to the nintendo page" title="nintendo">
-                    Nintendo
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" aria-label="Click here to the login page" title="login">
-                    <i class="fas fa-user-circle"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" aria-label="Click here to go to the shopping cart" title="shopping cart">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-sm " id="navigation-bar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Show navigation bar">
+            <span><i class="fas fa-bars"></i></span>
+        </button>
+        <div class=" collapse navbar-collapse justify-content-center " id="navbarToggler">
+            <ul class="navbar-nav ">
+                <li class="nav-item m-1">
+                    <button id="theme-switcher" class="nav-link p-2"
+                        aria-label="Click here to change website colors from dark to light and back">
+                        <i class="fas fa-adjust fa-lg" aria-hidden="true" title="theme"></i>
+                    </button>
+                </li>
+                <li class="nav-item m-1">
+                    <a href="{% url 'home' %}" class="nav-link p-2" id="home-icon"
+                        aria-label="Click here to go to home page">
+                        <i class="fas fa-home fa-lg" aria-hidden="true" title="home"></i>
+                    </a>
+                </li>
+                <li class="nav-item m-1">
+                    <a href="{% url 'playstation' %}" class="nav-link playstation p-2"
+                        aria-label="Click here to go to the playstation page" title="playstation">
+                        Playstation
+                    </a>
+                </li>
+                <li class="nav-item m-1">
+                    <a href="{% url 'xbox' %}" class="nav-link xbox p-2" aria-label="Click here to go to the xbox page"
+                        title="xbox">
+                        Xbox
+                    </a>
+                </li>
+                <li class="nav-item m-1">
+                    <a href="{% url 'nintendo' %}" class="nav-link nintendo p-2"
+                        aria-label="Click here to go to the nintendo page" title="nintendo">
+                        Nintendo
+                    </a>
+                </li>
+                <li class="nav-item m-1">
+                    <button class="nav-link p-2" id="login-icon" aria-label="Click here to the login page">
+                        <i class="fas fa-user-circle fa-lg" aria-hidden="true" title="login"></i>
+                    </button>
+                </li>
+                <li class="nav-item m-1">
+                    <button class="nav-link p-2" id="shopping-cart-icon"
+                        aria-label="Click here to go to the shopping cart">
+                        <i class="fas fa-shopping-cart fa-lg" aria-hidden="true" title="shopping cart"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </nav>
+    <hr class="hr-darkmode">
     {% block content %}
     {% endblock %}
     <footer class="fixed-bottom">
