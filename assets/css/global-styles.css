@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Griffy&family=Poppins:ital@1&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Griffy&family=Poppins&family=Raleway&display=swap');
 
 * {
     box-sizing: border-box;
@@ -20,11 +20,28 @@ body {
     min-width: 320px;
 }
 
+a {
+    color: inherit;
+}
+
 a:hover {
     color: inherit;
 }
 
-/* ---------------Navbar -----------------------*/
+/* --------------------------------------------------------------HEADER-------------------------------------------------------*/
+.ludus {
+    display: inline-block;
+    transform: rotate(10deg);
+    font-family: 'Griffy', sans-serif;
+}
+
+.nexus {
+    display: inline-block;
+    transform: rotate(-10deg);
+    font-family: 'Griffy', sans-serif;
+}
+
+/* --------------------------------------------------------------NAVBAR-------------------------------------------------------*/
 
 /*---------- Dark Mode Color Schema-------------*/
 

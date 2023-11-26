@@ -26,7 +26,11 @@
 
 <body class="dark-mode" aria-labelledby="navigation-bar">
     <header>
-        <h1>LUDUS NEXUS</h1>
+        <a href="{% url 'home' %} " aria-label="Click here to go to home page" title="ludus nexus">
+            <h1 class="d-flex justify-content-center align-items-center p-4"><span class="ludus mr-5">LUDUS</span>
+                <span class="nexus">NEXUS</span>
+            </h1>
+        </a>
     </header>
     <nav class="navbar navbar-expand-sm " id="navigation-bar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
