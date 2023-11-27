@@ -1,10 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 {% block meta_info %}
-<meta name="description" content="Explore our ever expanding collection of PlayStation 5 games, accessories, and consoles. Discover the latest PS5 offerings all in one place.">
+<meta name="description"
+    content="Explore our ever expanding collection of PlayStation 5 games, accessories, and consoles. Discover the latest PS5 offerings all in one place.">
 <meta name="keywords"
     content="PS5, PlayStation 5, PS5 games, PlayStation 5 games, PS5 accessories, PlayStation 5 accessories">
 {% endblock %}
+{% block header %}
+<a href="{% url 'home' %} " aria-label="Click here to go to the home page" title="Playstation">
+    <h1 class="d-flex justify-content-center align-items-center p-4 playstation">Playstation
+    </h1>
+</a>
+{% endblock %}
+{% block subnav %}
+<nav id="sub-navigation" class="btn-group btn-group-sm d-flex justify-content-center align-items-center" role="group"
+    aria-label="PlayStation sub-navigation. Select to filter games, consoles, or accessories.">
+    <button type="button" class="btn-sm playstation rounded-0" title="games">Games</button>
+    <button type="button" class="btn-sm playstation rounded-0 mx-1" title="consoles">Consoles</button>
+    <button type="button" class="btn-sm playstation rounded-0" title="accessories">Accessories</button>
+</nav>
+{% endblock %}
 {% block content%}
-<h1 class="display-4 text-success">Playstation</h1>
 {% endblock %}

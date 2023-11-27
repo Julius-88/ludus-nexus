@@ -1,10 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 {% block meta_info %}
-<meta name="description" content="Explore our ever expanding collection of Nintendo Switch games, accessories, and consoles. Discover the latest Nintendo offerings all in one place.">
+<meta name="description"
+    content="Explore our ever expanding collection of Nintendo Switch games, accessories, and consoles. Discover the latest Nintendo offerings all in one place.">
 <meta name="keywords"
     content="Nintendo Switch, Nintendo Switch games, Nintendo games, Nintendo accessories, Nintendo Switch accessories">
 {% endblock %}
+{% block header %}
+<a href="{% url 'home' %} " aria-label="Click here to go to the home page" title="Nintendo">
+    <h1 class="d-flex justify-content-center align-items-center p-4 nintendo">Nintendo
+    </h1>
+</a>
+{% endblock %}
+{% block subnav %}
+<div class="btn-group btn-group-sm d-flex justify-content-center align-items-center" role="group"
+    aria-label="Nintendo sub-navigation. Select to filter games, consoles, or accessories.">
+    <button type="button" class="btn-sm nintendo rounded-0" title="games">Games</button>
+    <button type="button" class="btn-sm nintendo rounded-0 mx-1" title="consoles">Consoles</button>
+    <button type="button" class="btn-sm nintendo rounded-0" title="accessories">Accessories</button>
+</div>
+{% endblock %}
 {% block content%}
-<h1 class="display-4 text-success">Nintendo</h1>
 {% endblock %}

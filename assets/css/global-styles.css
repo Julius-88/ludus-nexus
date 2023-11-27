@@ -28,6 +28,11 @@ a:hover {
     color: inherit;
 }
 
+.btn-group button {
+    border: 1px solid transparent;
+    color: inherit;
+}
+
 /* --------------------------------------------------------------HEADER-------------------------------------------------------*/
 .ludus {
     display: inline-block;
@@ -64,6 +69,12 @@ hr {
 
 .light-mode {
     background-color: #E5E5E5;
+    color: black;
+}
+
+.light-mode .playstation,
+.light-mode .xbox,
+.light-mode .nintendo {
     color: black;
 }
 
@@ -107,6 +118,7 @@ hr {
 
 .playstation:hover {
     background-color: #218DE5;
+    outline: 2px solid #218DE5;
 }
 
 /*------------ Xbox -------------------- */
@@ -118,6 +130,7 @@ hr {
 
 .xbox:hover {
     background-color: #228822;
+    outline: 2px solid #228822;
 }
 
 /*------------ Nintendo -------------------- */
@@ -129,6 +142,7 @@ hr {
 
 .nintendo:hover {
     background-color: #E71B2B;
+    outline: 2px solid #E71B2B;
 }
 
 /*------------ Home Icon -------------------- */

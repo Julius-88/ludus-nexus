@@ -1,10 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 {% block meta_info %}
-<meta name="description" content="Explore our ever expanding collection of Xbox series x and Xbox series s games, accessories, and consoles. Discover the latest Xbox offerings all in one place.">
+<meta name="description"
+    content="Explore our ever expanding collection of Xbox series x and Xbox series s games, accessories, and consoles. Discover the latest Xbox offerings all in one place.">
 <meta name="keywords"
     content="Xbox, Xbox Series X, Xbox Series S, Xbox games, Xbox Series X games, Xbox Series S games, Xbox accessories, Xbox Series X accessories, Xbox Series S accessories">
 {% endblock %}
+{% block header %}
+<a href="{% url 'home' %} " aria-label="Click here to go to the home page" title="Xbox">
+    <h1 class="d-flex justify-content-center align-items-center p-4 xbox">Xbox
+    </h1>
+</a>
+{% endblock %}
+{% block subnav %}
+<div class="btn-group btn-group-sm d-flex justify-content-center align-items-center" role="group"
+    aria-label="Xbox sub-navigation. Select to filter games, consoles, or accessories.">
+    <button type="button" class="btn-sm xbox rounded-0" title="games">Games</button>
+    <button type="button" class="btn-sm xbox rounded-0 mx-1" title="consoles">Consoles</button>
+    <button type="button" class="btn-sm xbox rounded-0" title="accessories">Accessories</button>
+</div>
+{% endblock %}
 {% block content%}
-<h1 class="display-4 text-success">Xbox</h1>
 {% endblock %}
