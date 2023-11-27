@@ -1,16 +1,18 @@
+// --------------------------------------Toggle Mode Script ----------------------------------------
+
 /** Documentation and websites used to create this code.
  * https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
  * https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
  * https://developer.mozilla.org/en-US/docs/Web/Events
  * https://developer.mozilla.org/en-US/docs/Web/API/Storage
  * https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
-*/
+ */
 
 // Function to apply the theme based on local storage or default to dark mode
 function applyTheme() {
     const body = document.body;
     const savedTheme = localStorage.getItem('theme');
-    
+
     // Remove both classes to avoid conflicts
     body.classList.remove('dark-mode', 'light-mode');
 

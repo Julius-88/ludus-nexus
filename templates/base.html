@@ -31,14 +31,18 @@
     <title>Ludus Nexus {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body class="dark-mode" aria-labelledby="navigation-bar">
+<body class="dark-mode" aria-labelledby="navigation-bar sub-navigation">
+
     <header>
-        <a href="{% url 'home' %} " aria-label="Click here to go to home page" title="ludus nexus">
+        {% block header %}
+        <a href="{% url 'home' %} " aria-label="Click here to go to the home page" title="Ludus Nexus">
             <h1 class="d-flex justify-content-center align-items-center p-4"><span class="ludus mr-5">LUDUS</span>
                 <span class="nexus">NEXUS</span>
             </h1>
         </a>
+        {% endblock %}
     </header>
+
     <nav class="navbar navbar-expand-sm " id="navigation-bar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
             aria-controls="navbarToggler" aria-expanded="false" aria-label="Show navigation bar">
@@ -49,18 +53,18 @@
                 <li class="nav-item m-1">
                     <button id="theme-switcher" class="nav-link d-flex w-100 h-100 align-items-center p-2"
                         aria-label="Click here to change website colors from dark to light and back">
-                        <i class="fas fa-adjust fa-lg" aria-hidden="true" title="theme"></i>
+                        <i class="fas fa-adjust fa-lg" aria-hidden="true" title="Theme"></i>
                     </button>
                 </li>
                 <li class="nav-item m-1">
                     <a href="{% url 'home' %}" class="nav-link p-2" id="home-icon"
-                        aria-label="Click here to go to home page">
-                        <i class="fas fa-home fa-lg" aria-hidden="true" title="home"></i>
+                        aria-label="Click here to go to the home page">
+                        <i class="fas fa-home fa-lg" aria-hidden="true" title="Home"></i>
                     </a>
                 </li>
                 <li class="nav-item m-1">
                     <a href="{% url 'playstation' %}" class="nav-link playstation p-2"
-                        aria-label="Click here to go to the playstation page" title="playstation">
+                        aria-label="Click here to go to the playstation page" title="Playstation">
                         Playstation
                     </a>
                 </li>
@@ -72,25 +76,27 @@
                 </li>
                 <li class="nav-item m-1">
                     <a href="{% url 'nintendo' %}" class="nav-link nintendo p-2"
-                        aria-label="Click here to go to the nintendo page" title="nintendo">
+                        aria-label="Click here to go to the nintendo page" title="Nintendo">
                         Nintendo
                     </a>
                 </li>
                 <li class="nav-item m-1">
                     <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="login-icon"
-                        aria-label="Click here to the login page">
-                        <i class="fas fa-user-circle fa-lg" aria-hidden="true" title="login"></i>
+                        aria-label="Click here to go to the login page">
+                        <i class="fas fa-user-circle fa-lg" aria-hidden="true" title="Log in"></i>
                     </button>
                 </li>
                 <li class="nav-item m-1">
                     <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="shopping-cart-icon"
                         aria-label="Click here to go to the shopping cart">
-                        <i class="fas fa-shopping-cart fa-lg" aria-hidden="true" title="shopping cart"></i>
+                        <i class="fas fa-shopping-cart fa-lg" aria-hidden="true" title="Shopping cart"></i>
                     </button>
                 </li>
             </ul>
         </div>
     </nav>
+    {% block subnav %}
+    {% endblock %}
     <hr>
     {% block content %}
     {% endblock %}
