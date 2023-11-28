@@ -35,7 +35,7 @@
 
     <header>
         {% block header %}
-        <a href="{% url 'home' %} " aria-label="Click here to go to the home page" title="Ludus Nexus">
+        <a href="{% url 'home' %} " aria-label="Click here on Ludus Nexus to go to the home page" title="Ludus Nexus">
             <h1 class="d-flex justify-content-center align-items-center p-4"><span class="ludus mr-5">LUDUS</span>
                 <span class="nexus">NEXUS</span>
             </h1>
@@ -55,12 +55,6 @@
                         aria-label="Click here to change website colors from dark to light and back">
                         <i class="fas fa-adjust fa-lg" aria-hidden="true" title="Theme"></i>
                     </button>
-                </li>
-                <li class="nav-item m-1">
-                    <a href="{% url 'home' %}" class="nav-link p-2" id="home-icon"
-                        aria-label="Click here to go to the home page">
-                        <i class="fas fa-home fa-lg" aria-hidden="true" title="Home"></i>
-                    </a>
                 </li>
                 <li class="nav-item m-1">
                     <a href="{% url 'playstation' %}" class="nav-link playstation p-2"
