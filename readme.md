@@ -64,6 +64,7 @@ The design embraces the vibrant identities of the selected gaming consoles by in
 These updates are part of our continuous effort to improve user experience and website aesthetics.
 1. **Mobile View Navbar:** Implemented hamburger menu functionality for a more user-friendly experience in mobile view. This replaced the previous design of circular navigation links.
 2. **Navigation Menu Color in Light Mode:** Adjusted the color scheme of the navigation menu in light mode to ensure a more seamless integration with the overall page design. 
+3. **Removal of Home Icon in Navbar:** After reviewing similar websites in the industry, it became apparent that a dedicated home icon is not a common practice. Most sites rely on their brand logo or name in the header to function as a home link. In aligning with these industry standards and to simplify the user interface, the decision was made to remove the home icon from our navigation. This change is expected to streamline the user experience while maintaining intuitive navigation by using our brand name in the header as the primary method to return to the home page.
 
 ## Fonts
 - The Griffy font has been chosen for the sites title name, this is to stand out from other sites and give a memorable impression on the user.
