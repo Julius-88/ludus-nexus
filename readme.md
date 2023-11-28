@@ -136,6 +136,9 @@ To enhance user convenience and transparency, a Privacy Policy modal has been in
 
 ![Privacy Policy Opened](./assets/img/privacy-policy-opened.JPG)
 
+## 404 Error Page
+Our website includes a custom 404 error page designed to clearly communicate to users when they have encountered a non-existent page or a broken link. The page features a clear and concise message, "PAGE NOT WORKING," ensuring users are immediately aware of the error.
+The 404 page also includes a prominent Home button. This feature allows users to easily navigate back to the main content of the site.
 
 # Resources
 - **Favicon.io**: Used for generating favicon images. [favicon.io](https://favicon.io/favicon-converter/)

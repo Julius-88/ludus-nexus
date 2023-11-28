@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/global-styles.css' %}">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %} ">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <title>404</title>
+</head>
+
+<body class="dark-mode">
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-3 d-flex justify-content-center p-2 pl-5 ml-5">PAGE NOT WORKING</h1>
+        <hr>
+        <div class="d-flex flex-column align-items-center error container ">
+            <p>
+                There seems to be something wrong with the page!
+                <br>
+                Click on the button below to go back to the home page.
+            </p>
+            <a href="{% url 'home' %}">
+                <button type="button" class="btn cta error-btn my-4" title="Home"
+                    aria-label="Click here to return to home page">
+                    Home</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
