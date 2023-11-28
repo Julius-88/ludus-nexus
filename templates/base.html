@@ -14,7 +14,7 @@
     <meta name="keywords"
         content="console gaming, PlayStation 5, PS5, Xbox Series X, Xbox Series S, Nintendo Switch, video games, gaming accessories, latest game releases, gaming news">
     {% endblock %}
-    <meta name="author" content="Ludus Nexus / Julius Alamarvdashti">
+    <meta name="author" content="Ludus Nexus">
     {% endblock %}
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -31,7 +31,7 @@
     <title>Ludus Nexus {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body class="dark-mode" aria-labelledby="navigation-bar sub-navigation privacy-policy">
+<body class="dark-mode" aria-labelledby="navigation-bar sub-navigation privacy-policy facebook">
 
     <header>
         {% block header %}
@@ -96,17 +96,23 @@
     <footer class="fixed-bottom container-fluid px-0 py-3">
         <hr>
         <div class="row justify-content-center align-items-center">
-            <div class="row-4 col-md-4 text-center p-2">
+            <div class="col-md-4 text-center p-2">
                 <h4>Information</h4>
                 {% include "policy.html" %}
             </div>
-            <div class="row-4 col-md-4 text-center p-2">
+            <div class="col-md-4 text-center p-2">
                 <h4>Information</h4>
                 {% include "policy.html" %}
             </div>
-            <div class="row-4 col-md-4 text-center p-2">
-                <h4>Information</h4>
-                {% include "policy.html" %}
+            <div class="col-md-4 text-center p-2">
+                <h4>Social Media</h4>
+                <a href="https://www.facebook.com/profile.php?id=61553536475742" target="_blank"
+                    rel="noopener noreferrer">
+                    <button type="button" class="hover-border" id="facebook" title="Facebook"
+                        aria-label="Click here to visit our Facebook page">
+                        Facebook
+                    </button>
+                </a>
             </div>
             <span class="small">Copyright &copy; 2023 Ludus Nexus</span>
         </div>
