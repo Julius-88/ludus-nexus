@@ -58,6 +58,15 @@ a:hover {
     outline: 2px solid #A367F2;
 }
 
+.close {
+    background-color: transparent;
+    color: inherit;
+}
+
+.close:hover {
+    color: white;
+}
+
 /* --------------------------------------------------------------HEADER-------------------------------------------------------*/
 .ludus {
     display: inline-block;
@@ -87,11 +96,6 @@ hr {
 .nav-link {
     color: white;
 }
-
-.dark-mode .modal-content {
-    color: black;
-}
-
 
 
 /*---------- Light Mode Color Schema-------------*/
@@ -127,7 +131,9 @@ hr {
     color: white;
 }
 
-.light-mode .navbar-toggler:hover {
+.light-mode .navbar-toggler:hover,
+.light-mode .modal-content,
+.light-mode .close:hover {
     background-color: white;
     color: black;
 }
@@ -234,4 +240,9 @@ hr {
 .modal-footer {
     margin: 0.5rem;
     padding: 1rem;
+}
+
+.modal-content {
+    background-color: #242526;
+    color: white;
 }
