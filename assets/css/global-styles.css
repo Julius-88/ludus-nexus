@@ -246,3 +246,16 @@ hr {
     background-color: #242526;
     color: white;
 }
+
+.jumbotron {
+    background-color: inherit;
+}
+
+/*------------ 404 -------------------- */
+.error {
+    font-size: 3em;
+}
+
+.error-btn {
+    font-size: 1em;
+}
