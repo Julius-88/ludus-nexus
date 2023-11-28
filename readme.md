@@ -64,6 +64,8 @@ The design embraces the vibrant identities of the selected gaming consoles by in
 These updates are part of our continuous effort to improve user experience and website aesthetics.
 1. **Mobile View Navbar:** Implemented hamburger menu functionality for a more user-friendly experience in mobile view. This replaced the previous design of circular navigation links.
 2. **Navigation Menu Color in Light Mode:** Adjusted the color scheme of the navigation menu in light mode to ensure a more seamless integration with the overall page design. 
+3. **Removal of Home Icon in Navbar:** After reviewing similar websites in the industry, it became apparent that a dedicated home icon is not a common practice. Most sites rely on their brand logo or name in the header to function as a home link. In aligning with these industry standards and to simplify the user interface, the decision was made to remove the home icon from our navigation. This change is expected to streamline the user experience while maintaining intuitive navigation by using our brand name in the header as the primary method to return to the home page.
+4. **Updating Footer Links - Privacy Policy:** The footer links for cookies and GDPR have been consolidated into a single Privacy Policy link. This change was made to streamline the footer's content, as we do not use cookies and all GDPR-related information is comprehensively addressed in our Privacy Policy. This adjustment simplifies user access to essential privacy information.
 
 ## Fonts
 - The Griffy font has been chosen for the sites title name, this is to stand out from other sites and give a memorable impression on the user.
@@ -102,10 +104,36 @@ We are excited to introduce the official Facebook page for Ludus Nexus! This is 
 
 Below are images showcasing the Facebook page and the dedicated business Gmail account, which is set up for customer support and inquiries:
 
+**Top of Facebook Page**
+
 ![Facebook images](./assets/img/facebook-page-p1.JPG)
+
+**Middle of Facebook Page**
+
 ![Facebook images](./assets/img/facebook-page-p2.JPG)
+
+**Bottom of Facebook Page**
+
 ![Facebook images](./assets/img/facebook-page-p3.JPG)
-![Gmail images](./assets/img/gmail-account.JPG)
+
+**Gmail Account**
+
+![Gmail Account](./assets/img/gmail-account.JPG)
+
+
+# Features
+## Privacy Policy Modal
+
+To enhance user convenience and transparency, a Privacy Policy modal has been integrated into the footer of the site. This allows users to access information about our privacy practices and GDPR compliance without navigating away from the current page. The policy was generated using[Privacy Policy Generator](https://www.privacypolicygenerator.info/), ensuring comprehensive coverage of key privacy aspects.
+
+
+**Privacy Policy Button**
+
+![Privacy Policy Button](./assets/img/privacy-policy-button.JPG) 
+
+**Privacy Policy Modal**
+
+![Privacy Policy Opened](./assets/img/privacy-policy-opened.JPG)
 
 
 # Resources

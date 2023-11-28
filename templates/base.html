@@ -14,7 +14,7 @@
     <meta name="keywords"
         content="console gaming, PlayStation 5, PS5, Xbox Series X, Xbox Series S, Nintendo Switch, video games, gaming accessories, latest game releases, gaming news">
     {% endblock %}
-    <meta name="author" content="Ludus Nexus">
+    <meta name="author" content="Ludus Nexus / Julius Alamarvdashti">
     {% endblock %}
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -42,7 +42,6 @@
         </a>
         {% endblock %}
     </header>
-
     <nav class="navbar navbar-expand-sm " id="navigation-bar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
             aria-controls="navbarToggler" aria-expanded="false" aria-label="Show navigation bar">
@@ -94,9 +93,23 @@
     <hr>
     {% block content %}
     {% endblock %}
-    <hr>
-    <footer class="fixed-bottom container-fluid">
-        {% include "policy.html" %}
+    <footer class="fixed-bottom container-fluid px-0 py-3">
+        <hr>
+        <div class="row justify-content-center align-items-center">
+            <div class="row-4 col-md-4 text-center p-2">
+                <h4>Information</h4>
+                {% include "policy.html" %}
+            </div>
+            <div class="row-4 col-md-4 text-center p-2">
+                <h4>Information</h4>
+                {% include "policy.html" %}
+            </div>
+            <div class="row-4 col-md-4 text-center p-2">
+                <h4>Information</h4>
+                {% include "policy.html" %}
+            </div>
+            <span class="small">Copyright &copy; 2023 Ludus Nexus</span>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
