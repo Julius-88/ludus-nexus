@@ -172,6 +172,11 @@ In addition to the frontend features, all subscriptions are conveniently managed
 
 ![Mailchimp database](./assets/img/newsletter-database.JPG)
 
+# Unfixed Bugs
+1. **Mailchimp Subscription Messages Bug:** The Mailchimp subscription form messages (success, error, etc.) do not reset after the modal is closed; they persist until the page is fully reloaded. Despite attempts to override Mailchimp's JavaScript functionality to reset these messages, the issue remains unresolved. The bug has been acknowledged and requires further investigation.
+
+![Mailchimp code](./assets/img/mailchimp-bug.JPG)
+
 # Resources
 - **Favicon.io**: Used for generating favicon images. [favicon.io](https://favicon.io/favicon-converter/)
 - **FontAwesome**: Provides various icons used across the site. [fontawesome.com](https://fontawesome.com/)
