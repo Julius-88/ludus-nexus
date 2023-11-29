@@ -1,0 +1,76 @@
+{% load static %}
+
+<!-- Modal -->
+<!-- Button trigger modal -->
+<button type="button" class="hover-border" id="newsletter" title="Newsletter" data-toggle="modal"
+    data-target="#newsLetterBackdrop" aria-label="Open newsletter subscription form">
+    Newsletter Signup
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="newsLetterBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Join Our Newsletter</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div id="mc_embed_shell">
+
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://gmail.us21.list-manage.com/subscribe/post?u=eb5ee913ec78d7cf554068e39&amp;id=61ff67b389&amp;f_id=0091e8e6f0"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank" rel="noopener noreferrer">
+                            <div id="mc_embed_signup_scroll">
+                                <div class="mc-field-group"><label for="mce-EMAIL">Email Address</label><input
+                                        type="email" name="EMAIL" class="required email" id="mce-EMAIL" required=""
+                                        value="" aria-label="Fill in your email address here"></div>
+                                <div id="mce-responses">
+                                    <div class="response" aria-label="something went wrong, try again" id="mce-error-response" style="display: none;"></div>
+                                    <div class="response" aria-label="it's a success! thank you for subscribing" id="mce-success-response" style="display: none;"></div>
+                                </div>
+                                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                    <!-- real people should not fill this in and expect good things - do not remove this
+                                    or risk form bot signups  -->
+                                    <input type="text" name="b_eb5ee913ec78d7cf554068e39_61ff67b389" tabindex="-1"
+                                        value="">
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <input type="submit" name="subscribe" title="Subscribe" id="mc-embedded-subscribe"
+                                        class="button cta" value="Subscribe" aria-label="Click here to submit your email address!">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
+                    </script>
+                    <script type="text/javascript">
+                        (function ($) {
+                            window.fnames = new Array();
+                            window.ftypes = new Array();
+                            fnames[0] = 'EMAIL';
+                            ftypes[0] = 'email';
+                            fnames[1] = 'FNAME';
+                            ftypes[1] = 'text';
+                            fnames[2] = 'LNAME';
+                            ftypes[2] = 'text';
+                            fnames[3] = 'ADDRESS';
+                            ftypes[3] = 'address';
+                            fnames[4] = 'PHONE';
+                            ftypes[4] = 'phone';
+                            fnames[5] = 'BIRTHDAY';
+                            ftypes[5] = 'birthday';
+                        }(jQuery));
+                        var $mcj = jQuery.noConflict(true);
+                    </script>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

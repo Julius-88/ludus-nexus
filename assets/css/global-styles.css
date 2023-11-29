@@ -48,12 +48,15 @@ a:hover {
     color: inherit;
 }
 
-.cta {
+.cta,
+#mc_embed_signup .button {
     background-color: #9747FF;
     color: inherit;
+    transition: none;
 }
 
-.cta:hover {
+.cta:hover,
+#mc_embed_signup .button:hover {
     background-color: #A367F2;
     outline: 2px solid #A367F2;
 }
@@ -258,4 +261,9 @@ hr {
 
 .error-btn {
     font-size: 1em;
+}
+
+/*------------- Mailchimp--------------- */
+#mc_embed_signup {
+    background: inherit;
 }

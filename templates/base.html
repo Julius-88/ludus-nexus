@@ -19,7 +19,9 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- Custom CSS -->
+    <!-- Mailchimp -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <!-- Global CSS -->
     <link rel="stylesheet" href="{% static 'css/global-styles.css' %}">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/d5722e680c.js" crossorigin="anonymous"></script>
@@ -32,7 +34,7 @@
     <title>Ludus Nexus {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body class="dark-mode" aria-labelledby="navigation-bar sub-navigation privacy-policy facebook">
+<body class="dark-mode" aria-labelledby="navigation-bar sub-navigation privacy-policy facebook newsletter">
 
     <header>
         {% block header %}
@@ -94,18 +96,18 @@
     <hr>
     {% block content %}
     {% endblock %}
-    <footer class="fixed-bottom container-fluid px-0 py-3">
+    <footer class="fixed-bottom container-fluid px-0 py-3 pt-md-5">
         <hr>
         <div class="row justify-content-center align-items-center">
-            <div class="col-md-4 text-center p-2">
+            <div class="col-md-3 text-center p-2 mt-3">
                 <h4>Information</h4>
                 {% include "policy.html" %}
             </div>
-            <div class="col-md-4 text-center p-2">
+            <div class="col-md-3 text-center p-2">
                 <h4>Contact Us</h4>
                 <p>ludus.nexus@gmail.com</p>
             </div>
-            <div class="col-md-4 text-center p-2">
+            <div class="col-md-3 text-center p-2">
                 <h4>Social Media</h4>
                 <a href="https://www.facebook.com/profile.php?id=61553536475742" target="_blank"
                     rel="noopener noreferrer">
@@ -115,7 +117,11 @@
                     </button>
                 </a>
             </div>
-            <span class="small">Copyright &copy; 2023 Ludus Nexus</span>
+            <div class="col-md-3 text-center p-2">
+                <h4>Stay Updated</h4>
+                {% include "newsletter.html" %}
+            </div>
+            <span class="small mt-5">Copyright &copy; 2023 Ludus Nexus</span>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
