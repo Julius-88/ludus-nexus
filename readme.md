@@ -67,6 +67,7 @@ These updates are part of our continuous effort to improve user experience and w
 3. **Removal of Home Icon in Navbar:** After reviewing similar websites in the industry, it became apparent that a dedicated home icon is not a common practice. Most sites rely on their brand logo or name in the header to function as a home link. In aligning with these industry standards and to simplify the user interface, the decision was made to remove the home icon from our navigation. This change is expected to streamline the user experience while maintaining intuitive navigation by using our brand name in the header as the primary method to return to the home page.
 4. **Updating Footer Links - Privacy Policy:** The footer links for cookies and GDPR have been consolidated into a single Privacy Policy link. This change was made to streamline the footer's content, as we do not use cookies and all GDPR-related information is comprehensively addressed in our Privacy Policy. This adjustment simplifies user access to essential privacy information.
 5. **Removal of Facebook Icon from Footer:** Upon evaluating several reference pages within the industry, a common trend was observed where websites typically opt for either a Facebook logo or the text in their footer, but not both. To align with these standards and to ensure a cleaner, more streamlined user interface, we decided to remove the Facebook icon from our footer. Our footer now features only the text link to our Facebook page, simplifying the design while retaining the essential function of directing users to our social media presence.
+6. **Integration of a Modal for Newsletter Subscription in the Footer:** The design was updated to include a modal-trigger button for newsletter subscriptions, replacing the direct input field in the footer. This change was made to ensure a cohesive and uniform design. The modal provides a focused and user-friendly interface for newsletter sign-up, enhancing the overall user experience."
 
 ## Fonts
 - The Griffy font has been chosen for the sites title name, this is to stand out from other sites and give a memorable impression on the user.
@@ -139,6 +140,42 @@ To enhance user convenience and transparency, a Privacy Policy modal has been in
 ## 404 Error Page
 Our website includes a custom 404 error page designed to clearly communicate to users when they have encountered a non-existent page or a broken link. The page features a clear and concise message, "PAGE NOT WORKING," ensuring users are immediately aware of the error.
 The 404 page also includes a prominent Home button. This feature allows users to easily navigate back to the main content of the site.
+
+## Newsletter Signup
+A user-friendly newsletter signup modal has been integrated into the footer. This modal enables visitors to subscribe to our newsletter easily.
+
+![Newsletter button](./assets/img/newsletter-button.JPG)
+
+**Registration Process:** Users can enter their email address in the modal to subscribe.
+
+![Sign up modal](./assets/img/newsletter-modal.JPG)
+
+**Feedback on Subscription:**
+
+- A confirmation message appears for successful signups.
+
+![Success Message](./assets/img/newsletter-success.JPG)
+
+- An alert notifies users if they are already subscribed.
+
+![Already Subscribed](./assets/img/newsletter-existing.JPG)
+
+- An error message is displayed for invalid email inputs.
+
+![Error Message](./assets/img/newsletter-invalid.JPG)
+
+- A prompt indicates if the email field is left empty.
+
+![Required Message](./assets/img/newsletter-emptyfield.JPG)
+
+In addition to the frontend features, all subscriptions are conveniently managed and visible in the MailChimp database, allowing for efficient user engagement and communication tracking.
+
+![Mailchimp database](./assets/img/newsletter-database.JPG)
+
+# Unfixed Bugs
+1. **Mailchimp Subscription Messages Bug:** The Mailchimp subscription form messages (success, error, etc.) do not reset after the modal is closed; they persist until the page is fully reloaded. Despite attempts to override Mailchimp's JavaScript functionality to reset these messages, the issue remains unresolved. The bug has been acknowledged and requires further investigation.
+
+![Mailchimp code](./assets/img/mailchimp-bug.JPG)
 
 # Resources
 - **Favicon.io**: Used for generating favicon images. [favicon.io](https://favicon.io/favicon-converter/)
