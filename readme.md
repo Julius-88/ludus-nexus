@@ -140,6 +140,37 @@ To enhance user convenience and transparency, a Privacy Policy modal has been in
 Our website includes a custom 404 error page designed to clearly communicate to users when they have encountered a non-existent page or a broken link. The page features a clear and concise message, "PAGE NOT WORKING," ensuring users are immediately aware of the error.
 The 404 page also includes a prominent Home button. This feature allows users to easily navigate back to the main content of the site.
 
+## Newsletter Signup
+A user-friendly newsletter signup modal has been integrated into the footer. This modal enables visitors to subscribe to our newsletter easily.
+
+![Newsletter button](./assets/img/newsletter-button.JPG)
+
+**Registration Process:** Users can enter their email address in the modal to subscribe.
+
+![Sign up modal](./assets/img/newsletter-modal.JPG)
+
+**Feedback on Subscription:**
+
+- A confirmation message appears for successful signups.
+
+![Success Message](./assets/img/newsletter-success.JPG)
+
+- An alert notifies users if they are already subscribed.
+
+![Already Subscribed](./assets/img/newsletter-existing.JPG)
+
+- An error message is displayed for invalid email inputs.
+
+![Error Message](./assets/img/newsletter-invalid.JPG)
+
+- A prompt indicates if the email field is left empty.
+
+![Required Message](./assets/img/newsletter-emptyfield.JPG)
+
+In addition to the frontend features, all subscriptions are conveniently managed and visible in the MailChimp database, allowing for efficient user engagement and communication tracking.
+
+![Mailchimp database](./assets/img/newsletter-database.JPG)
+
 # Resources
 - **Favicon.io**: Used for generating favicon images. [favicon.io](https://favicon.io/favicon-converter/)
 - **FontAwesome**: Provides various icons used across the site. [fontawesome.com](https://fontawesome.com/)
