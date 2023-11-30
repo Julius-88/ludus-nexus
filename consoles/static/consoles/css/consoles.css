@@ -5,3 +5,16 @@
 .btn:hover {
     color: inherit;
 }
+
+.card {
+    background-color: transparent;
+}
+
+.vertical-align {
+    vertical-align:text-top;
+}
+
+.light-mode .card-footer,
+.light-mode .card-body {
+    background-color: white;
+}

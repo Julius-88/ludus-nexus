@@ -21,7 +21,7 @@ class Product(models.Model):
     tags = models.ManyToManyField(Tag)
     name = models.CharField(max_length=255, null=False, blank=False)
     description = models.TextField()
-    price = models.DecimalField(max_digits=6, decimal_places=2)
+    price = models.DecimalField(max_digits=6, decimal_places=0)
     image = models.ImageField(null=False, blank=False)
 
     def __str__(self):
