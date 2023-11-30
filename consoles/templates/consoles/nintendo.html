@@ -6,6 +6,9 @@
 <meta name="keywords"
     content="Nintendo Switch, Nintendo Switch games, Nintendo games, Nintendo accessories, Nintendo Switch accessories">
 {% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'consoles/css/consoles.css' %}">
+{% endblock %}
 {% block header %}
 <a href="{% url 'home' %} " aria-label="Click here on the Nintendo title to go to the home page" title="Nintendo">
     <h1 class="d-flex justify-content-center align-items-center p-4 nintendo">Nintendo
@@ -21,4 +24,5 @@
 </section>
 {% endblock %}
 {% block content%}
+{% include "includes/items.html" %}
 {% endblock %}

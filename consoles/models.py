@@ -9,22 +9,23 @@ class Console(models.Model):
         return self.name
 
 
-class Product(models.Model):
-    console = models.ForeignKey(Console, on_delete=models.CASCADE)
-    name = models.CharField(max_length=255, null=False, blank=False)
-    description = models.TextField()
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    image_url = models.URLField(max_length=1024, blank=False)
-
-    def __str__(self):
-        return self.name
-
-
 class Tag(models.Model):
     tag = models.CharField(max_length=50, null=False, blank=False)
 
     def __str__(self):
         return self.tag
+
+
+class Product(models.Model):
+    console = models.ForeignKey(Console, on_delete=models.CASCADE)
+    tags = models.ManyToManyField(Tag)
+    name = models.CharField(max_length=255, null=False, blank=False)
+    description = models.TextField()
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    image = models.ImageField(null=False, blank=False)
+
+    def __str__(self):
+        return self.name
 
 
 class ProductTag(models.Model):

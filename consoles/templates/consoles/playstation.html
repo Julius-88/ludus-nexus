@@ -6,6 +6,9 @@
 <meta name="keywords"
     content="PS5, PlayStation 5, PS5 games, PlayStation 5 games, PS5 accessories, PlayStation 5 accessories">
 {% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'consoles/css/consoles.css' %}">
+{% endblock %}
 {% block header %}
 <a href="{% url 'home' %} " aria-label="Click here on the Playstation title to go to the home page" title="Playstation">
     <h1 class="d-flex justify-content-center align-items-center p-4 playstation">Playstation
@@ -21,4 +24,5 @@
 </section>
 {% endblock %}
 {% block content%}
+{% include "includes/items.html" %}
 {% endblock %}

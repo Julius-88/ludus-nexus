@@ -1,0 +1,22 @@
+{% load static %}
+
+<section class="container">
+    <div class="row row-cols-1 row-cols-md-4 align-items-center justify-content-around">
+        {% for product in products %}
+        <figure class="figure col">
+            <img src="{{ product.image.url }}" alt="{{ product.name }}" class="figure-img img-fluid"
+                title="{{product.name}}">
+            <figcaption class="figure-caption">
+                {{product.name}}
+                <br>
+                {{product.price}}&euro;
+            </figcaption>
+            <br>
+            <button type="button" class="btn {{ console_type }}" data-container="body" data-toggle="popover"
+                data-placement="bottom" data-content="{{product.description}}">
+                <span title="description">Description</span>
+            </button>
+        </figure>
+        {% endfor %}
+    </div>
+</section>
