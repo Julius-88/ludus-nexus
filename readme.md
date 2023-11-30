@@ -177,6 +177,10 @@ In addition to the frontend features, all subscriptions are conveniently managed
 
 ![Mailchimp code](./assets/img/mailchimp-bug.JPG)
 
+2. **Favicon.io - 401 Error Issue:** Recently, the favicon icons for the website have stopped loading, and a "401 Error" is being displayed in the browser's console. This issue occurred without any known changes to the static files or their configurations in Django.
+This error prevents the favicon from being displayed in browser tabs, impacting the visual identification of the site.
+The issue is under investigation, and a solution has not yet been implemented.
+
 # Resources
 - **Favicon.io**: Used for generating favicon images. [favicon.io](https://favicon.io/favicon-converter/)
 - **FontAwesome**: Provides various icons used across the site. [fontawesome.com](https://fontawesome.com/)
