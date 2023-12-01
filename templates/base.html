@@ -61,6 +61,12 @@
                     </button>
                 </li>
                 <li class="nav-item m-1">
+                    <a href="{% url 'home' %}" class="nav-link p-2" id="home-icon"
+                        aria-label="Click here to go to the home page">
+                        <i class="fas fa-home fa-lg" aria-hidden="true" title="Home"></i>
+                    </a>
+                </li>
+                <li class="nav-item m-1">
                     <a href="{% url 'playstation' %}" class="nav-link playstation p-2"
                         aria-label="Click here to go to the playstation page" title="Playstation">
                         Playstation
@@ -79,10 +85,13 @@
                     </a>
                 </li>
                 <li class="nav-item m-1">
-                    <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="login-icon"
-                        aria-label="Click here to go to the login page">
-                        <i class="fas fa-user-circle fa-lg" aria-hidden="true" title="Log in"></i>
-                    </button>
+                    <a href="">
+                        <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="login-icon"
+                            aria-label="Click here to go to the login page">
+                            <i class="fas fa-user-circle fa-lg" aria-hidden="true" title="Log in"></i>
+                           <span class="ml-1">Log In</span> 
+                        </button>
+                    </a>
                 </li>
                 <li class="nav-item m-1">
                     <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="shopping-cart-icon"

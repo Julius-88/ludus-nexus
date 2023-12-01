@@ -3,7 +3,7 @@ const products = document.querySelectorAll('.product');
 
 buttons.forEach(button => {
     button.addEventListener('click', function () {
-        const filterTag = this.title;
+        const filterTag = this.dataset.subnav;
         console.log("Filtering for:", filterTag);
         products.forEach(product => {
             const productTags = product.getAttribute('data-tags').split(' ');
