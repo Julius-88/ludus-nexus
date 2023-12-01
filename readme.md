@@ -98,6 +98,10 @@ The database schema depicted below outlines the foundational structure of the Lu
 
 9. **WishList**: Allows users to save products to a personal wishlist for future reference. It links to both **Users** and **Products** tables, enabling users to easily access and manage a list of products they are interested in purchasing or reviewing later.
 
+# Update to Database
+
+**ProductTags** has been removed in favor of Django's *ManyToManyField* in **Tags**, simplifying the management of product-tag relationships.
+
 # Facebook Page
 
 We are excited to introduce the official Facebook page for Ludus Nexus! This is where you'll get updates on the latest in gaming and find out about special promotions for PlayStation, Xbox, and Nintendo games and gear. Stay connected and catch the best deals by following us on our Facebook page.
