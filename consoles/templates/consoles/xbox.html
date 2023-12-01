@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="{% static 'consoles/css/consoles.css' %}">
 {% endblock %}
 {% block header %}
-<a href="{% url 'home' %} " aria-label="Click here on the Xbox title to go to the home page" title="Xbox">
+<a href="{% url 'xbox' %} " aria-label="Click here on the Xbox title to go to the xbox page" title="Xbox">
     <h1 class="d-flex justify-content-center align-items-center p-4 xbox">Xbox
     </h1>
 </a>
@@ -18,11 +18,14 @@
 {% block subnav %}
 <section id="sub-navigation" class="btn-group btn-group-sm d-flex justify-content-center align-items-center"
     role="group" aria-label="Xbox sub-navigation. Select to filter games, consoles, or accessories.">
-    <button type="button" class="btn-sm xbox rounded-0" title="games">Games</button>
-    <button type="button" class="btn-sm xbox rounded-0 mx-1" title="consoles">Consoles</button>
-    <button type="button" class="btn-sm xbox rounded-0" title="accessories">Accessories</button>
+    <button type="button" class="btn-sm xbox rounded-0" data-subnav="Game" title="games">Games</button>
+    <button type="button" class="btn-sm xbox rounded-0 mx-1" data-subnav="Game" title="consoles">Consoles</button>
+    <button type="button" class="btn-sm xbox rounded-0" data-subnav="Game" title="accessories">Accessories</button>
 </section>
 {% endblock %}
 {% block content%}
 {% include "includes/items.html" %}
+{% endblock %}
+{% block extra_js %}
+<script src="{% static 'consoles/scripts/consoles.js' %}"></script>
 {% endblock %}
