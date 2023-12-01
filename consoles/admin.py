@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Console, Product, Tag, ProductTag, Wishlist
+from .models import Console, Product, Tag, Wishlist
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -22,12 +22,11 @@ class ProductAdmin(admin.ModelAdmin):
 
     def display_tags(self, obj):
         """This is required to display tag"""
-        return ', '.join([tag.tag for tag in obj.tags.all()])
+        return ', '.join([tag.name for tag in obj.tags.all()])
     display_tags.short_description = 'Tags'
 
 
 admin.site.register(Console)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Tag)
-admin.site.register(ProductTag)
 admin.site.register(Wishlist)

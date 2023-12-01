@@ -18,11 +18,14 @@
 {% block subnav %}
 <section id="sub-navigation" class="btn-group btn-group-sm d-flex justify-content-center align-items-center"
     role="group" aria-label="Nintendo sub-navigation. Select to filter games, consoles, or accessories.">
-    <button type="button" class="btn-sm nintendo rounded-0" title="games">Games</button>
-    <button type="button" class="btn-sm nintendo rounded-0 mx-1" title="consoles">Consoles</button>
-    <button type="button" class="btn-sm nintendo rounded-0" title="accessories">Accessories</button>
+    <button type="button" class="btn-sm subnav-btn nintendo rounded-0" title="Game">Games</button>
+    <button type="button" class="btn-sm subnav-btn nintendo rounded-0 mx-1" title="Console">Consoles</button>
+    <button type="button" class="btn-sm subnav-btn nintendo rounded-0" title="Accessory">Accessories</button>
 </section>
 {% endblock %}
 {% block content%}
 {% include "includes/items.html" %}
+{% endblock %}
+{% block extra_js %}
+<script src="{% static 'consoles/scripts/consoles.js' %}"></script>
 {% endblock %}
