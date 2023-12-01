@@ -10,10 +10,10 @@ class Console(models.Model):
 
 
 class Tag(models.Model):
-    tag = models.CharField(max_length=50, null=False, blank=False)
+    name = models.CharField(max_length=50, null=False, blank=False)
 
     def __str__(self):
-        return self.tag
+        return self.name
 
 
 class Product(models.Model):
@@ -28,14 +28,6 @@ class Product(models.Model):
         return self.name
 
 
-class ProductTag(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return f"{self.product.name} - {self.tag.name}"
-
-
 class Wishlist(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -43,4 +35,4 @@ class Wishlist(models.Model):
     products = models.ManyToManyField(Product)
 
     def __str__(self):
-        return self.name
+        return self.user.username

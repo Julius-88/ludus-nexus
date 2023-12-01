@@ -6,15 +6,20 @@
     color: inherit;
 }
 
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem #A367F2
+}
+
 .card {
     background-color: transparent;
 }
 
 .vertical-align {
-    vertical-align:text-top;
+    vertical-align: text-top;
 }
 
 .light-mode .card-footer,
-.light-mode .card-body {
+.light-mode .card-body,
+.light-mode .card-img-top {
     background-color: white;
 }

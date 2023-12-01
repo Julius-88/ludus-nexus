@@ -3,9 +3,9 @@
 <section class="container">
     <div class="row row-cols-1 row-cols-md-4 g-4">
         {% for product in products %}
-        <div class="col my-2">
+        <div class="col  my-2 product" data-tags="{% for tag in product.tags.all %}{{ tag.name }} {% endfor %}">
             <figure class="card h-100">
-                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top"
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid"
                     title="{{product.name}}">
                 <figcaption class="card-body d-flex flex-column justify-content-between">
                     <div class="card-title">{{product.name}}</div>
