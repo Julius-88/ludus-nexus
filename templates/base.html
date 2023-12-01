@@ -61,38 +61,50 @@
                     </button>
                 </li>
                 <li class="nav-item m-1">
-                    <a href="{% url 'home' %}" class="nav-link p-2" id="home-icon"
+                    <a href="{% url 'home' %}" class="nav-link p-2 h-100" id="home-icon"
                         aria-label="Click here to go to the home page">
                         <i class="fas fa-home fa-lg" aria-hidden="true" title="Home"></i>
                     </a>
                 </li>
                 <li class="nav-item m-1">
-                    <a href="{% url 'playstation' %}" class="nav-link playstation p-2"
+                    <a href="{% url 'playstation' %}" class="nav-link playstation p-2 h-100"
                         aria-label="Click here to go to the playstation page" title="Playstation">
                         Playstation
                     </a>
                 </li>
                 <li class="nav-item m-1">
-                    <a href="{% url 'xbox' %}" class="nav-link xbox p-2" aria-label="Click here to go to the xbox page"
-                        title="xbox">
+                    <a href="{% url 'xbox' %}" class="nav-link xbox p-2 h-100"
+                        aria-label="Click here to go to the xbox page" title="xbox">
                         Xbox
                     </a>
                 </li>
                 <li class="nav-item m-1">
-                    <a href="{% url 'nintendo' %}" class="nav-link nintendo p-2"
+                    <a href="{% url 'nintendo' %}" class="nav-link nintendo p-2 h-100"
                         aria-label="Click here to go to the nintendo page" title="Nintendo">
                         Nintendo
                     </a>
                 </li>
+                {% if user.is_authenticated %}
                 <li class="nav-item m-1">
-                    <a href="">
+                    <a href="{% url 'account_logout' %}">
                         <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="login-icon"
                             aria-label="Click here to go to the login page">
-                            <i class="fas fa-user-circle fa-lg" aria-hidden="true" title="Log in"></i>
-                           <span class="ml-1">Log In</span> 
+                            <i class="fas fa-address-card fa-lg" aria-hidden="true" title="Log in"></i>
+                            <span class="ml-1">Logout</span>
                         </button>
                     </a>
                 </li>
+                {% else %}
+                <li class="nav-item m-1">
+                    <a href="{% url 'account_login' %}">
+                        <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="login-icon"
+                            aria-label="Click here to go to the login page">
+                            <i class="fas fa-user-circle fa-lg" aria-hidden="true" title="Log in"></i>
+                            <span class="ml-1">Log In</span>
+                        </button>
+                    </a>
+                </li>
+                {% endif %}
                 <li class="nav-item m-1">
                     <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="shopping-cart-icon"
                         aria-label="Click here to go to the shopping cart">
@@ -107,7 +119,7 @@
     <hr>
     {% block content %}
     {% endblock %}
-    <footer class="container-fluid px-0 py-3 pt-md-5">
+    <footer class="container-fluid px-0 py-3 pt-md-5 sticky-bottom">
         <hr>
         <div class="row justify-content-center align-items-center">
             <div class="col-md-3 text-center p-2 mt-3">

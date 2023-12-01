@@ -17,7 +17,7 @@ h6 {
 }
 
 body {
-    min-width: 320px;
+    min-height: 320px;
 }
 
 a {
@@ -26,6 +26,19 @@ a {
 
 a:hover {
     color: inherit;
+}
+
+.responsive-text {
+    font-size: 1.5rem;
+    /* Default size */
+}
+
+@media (min-width: 768px) {
+
+    /* Medium screens and up */
+    .responsive-text {
+        font-size: 2rem;
+    }
 }
 
 /* --------------------------------------------------------------BUTTON-------------------------------------------------------*/
@@ -68,6 +81,21 @@ a:hover {
 
 .close:hover {
     color: white;
+}
+
+/* ---------------------------------------------------------Input Field and Forms---------------------------------------------*/
+#id_login,
+#id_password {
+    background-color: #242526;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    color: #E5E5E5;
+}
+
+#id_login:focus-visible,
+#id_password:focus-visible {
+    outline: 2px solid #A367F2;
 }
 
 /* --------------------------------------------------------------HEADER-------------------------------------------------------*/
@@ -139,6 +167,12 @@ hr {
 .light-mode .close:hover {
     background-color: white;
     color: black;
+}
+
+.light-mode #id_login,
+.light-mode #id_password {
+    background-color: white;
+    color: #42413C;
 }
 
 /* ---------------Navbar Toggler -----------------------*/
@@ -266,6 +300,18 @@ hr {
 /*------------- Mailchimp--------------- */
 #mc_embed_signup {
     background: inherit;
+}
+
+#mc_embed_signup .mc-field-group input {
+    outline: 2px solid #A367F2;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+    border: 1px solid #A367F2;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error:focus-visible {
+    outline: 2px solid #A367F2;
 }
 
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
