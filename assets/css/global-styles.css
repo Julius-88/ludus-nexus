@@ -16,10 +16,6 @@ h6 {
     font-family: 'Griffy', sans-serif;
 }
 
-body {
-    min-height: 320px;
-}
-
 a {
     color: inherit;
 }
@@ -28,18 +24,6 @@ a:hover {
     color: inherit;
 }
 
-.responsive-text {
-    font-size: 1.5rem;
-    /* Default size */
-}
-
-@media (min-width: 768px) {
-
-    /* Medium screens and up */
-    .responsive-text {
-        font-size: 2rem;
-    }
-}
 
 /* --------------------------------------------------------------BUTTON-------------------------------------------------------*/
 
@@ -270,7 +254,6 @@ hr {
 /*------------ MODAL -------------------- */
 
 .modal-backdrop {
-    position: static;
     background-color: transparent;
 }
 

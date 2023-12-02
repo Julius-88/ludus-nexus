@@ -36,7 +36,8 @@
     <title>Ludus Nexus {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body class="dark-mode" aria-labelledby="navigation-bar sub-navigation privacy-policy facebook newsletter">
+<body class="dark-mode d-flex flex-column min-vh-100"
+    aria-labelledby="navigation-bar sub-navigation privacy-policy facebook newsletter">
 
     <header>
         {% block header %}
@@ -119,18 +120,21 @@
     <hr>
     {% block content %}
     {% endblock %}
-    <footer class="container-fluid px-0 py-3 pt-md-5 sticky-bottom">
+    <footer class="mt-auto container-fluid px-0">
         <hr>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-3 text-center p-2 mt-3">
+        <section class="d-flex flex-column flex-md-row">
+            <div class="col-md-3">
                 <h4>Information</h4>
                 {% include "policy.html" %}
             </div>
-            <div class="col-md-3 text-center p-2">
+            <div class="col-md-3">
                 <h4>Contact Us</h4>
-                <p>ludus.nexus@gmail.com</p>
+                <button type="button" class="hover-border" id="privacy-policy" aria-label="Open privacy policy"
+                    title="Privacy policy" data-toggle="modal" data-target="#staticBackdrop">
+                    ludus.nexus@gmail.com
+                </button>
             </div>
-            <div class="col-md-3 text-center p-2">
+            <div class="col-md-3">
                 <h4>Social Media</h4>
                 <a href="https://www.facebook.com/profile.php?id=61553536475742" target="_blank"
                     rel="noopener noreferrer">
@@ -140,12 +144,12 @@
                     </button>
                 </a>
             </div>
-            <div class="col-md-3 text-center p-2">
+            <div class="col-md-3">
                 <h4>Stay Updated</h4>
                 {% include "newsletter.html" %}
             </div>
-            <span class="small mt-5">Copyright &copy; 2023 Ludus Nexus</span>
-        </div>
+        </section>
+        <div class="text-center p-2">Copyright &copy; 2023 Ludus Nexus</div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
