@@ -6,7 +6,7 @@
 {% block content %}
 
 <section class="d-flex flex-column justify-content-center align-items-center h-100">
-    <h1 class="mb-5 display-3">Sign In</h1>
+    <h1 class="mb-5">Sign In</h1>
     <form method="POST" action="{% url 'account_login' %}">
       {% csrf_token %}
       {{ form.as_p }}
@@ -19,7 +19,7 @@
           <a href="{{ signup_url }}" class="hover-border">Create Account</a>
         </div>
         <div class="float-right">
-          <button class="cta btn w-100" type="submit">Sign In</button>
+          <button class="cta btn" type="submit">Sign In</button>
         </div>
       </div>
     </form>
