@@ -20,3 +20,21 @@ def add_to_bag(request, product_id):
 
     request.session['bag'] = bag
     return redirect(redirect_url)
+
+
+def remove_from_bag(request, product_id):
+    """ Remove a quantity of specified product from the shopping bag """
+
+    bag = request.session.get('bag', {})
+    redirect_url = request.POST.get('redirect_url')
+
+    if product_id in bag:
+        # Decrease the quantity or remove the product if quantity becomes zero
+        quantity = int(request.POST.get('quantity', 1))
+        if bag[product_id] > quantity:
+            bag[product_id] -= quantity
+        else:
+            del bag[product_id]
+
+    request.session['bag'] = bag
+    return redirect(redirect_url)

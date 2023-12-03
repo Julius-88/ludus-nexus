@@ -19,6 +19,7 @@
                         <p class="card-text">Quantity: {{ item.quantity }}</p>
                         <p class="card-text">Price: {{ item.product.price }}€</p>
                         <p class="card-text">Subtotal: {{ grand_total }}€</p>
+                        {% include 'includes/remove.html' with product_id=item.product.id %}
                     </div>
                 </div>
                 {% endfor %}
