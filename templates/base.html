@@ -110,9 +110,10 @@
                 {% endif %}
                 <li class="nav-item m-1">
                     <a href="{% url 'view_bag' %}">
-                        <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="shopping-cart-icon"
-                            aria-label="Click here to go to the shopping cart">
-                            <i class="fas fa-shopping-cart fa-lg" aria-hidden="true" title="Shopping cart"></i>
+                        <button
+                            class="nav-link p-2 d-flex w-100 h-100 align-items-center {% if grand_total %} bag-has {% endif %}"
+                            id="shopping-cart-icon " aria-label="Click here to go to the shopping cart">
+                            <i class="fas fa-shopping-cart fa-lg " aria-hidden="true" title="Shopping cart"></i>
                         </button>
                     </a>
                 </li>
