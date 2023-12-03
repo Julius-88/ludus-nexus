@@ -87,14 +87,14 @@
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item m-1 dropdown">
-                    <button class="nav-link p-2 d-flex w-100 h-100 align-items-center dropdown-toggle" data-toggle="dropdown" id="login-icon"
-                        aria-label="Click here to go to the login page">
+                    <button class="nav-link p-2 d-flex w-100 h-100 align-items-center dropdown-toggle"
+                        data-toggle="dropdown" id="login-icon" aria-label="Click here to go to the login page">
                         <i class="fas fa-address-card fa-lg" aria-hidden="true" title="Log in"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
                         <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Delete Account</a>
+                        <a class="dropdown-item" href="{% url 'confirm_delete_account' %}">Delete Account</a>
                     </div>
                 </li>
                 {% else %}
