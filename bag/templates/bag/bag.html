@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <h1 class="success">Shopping Bag</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {% if bag_items %}
+            <div class="table-responsive rounded"></div>
+            {% else %}
+            <p class="mb-5">Your bag is empty</p>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endblock %}
