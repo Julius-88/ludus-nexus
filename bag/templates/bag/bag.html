@@ -1,17 +1,28 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
 <section class="container mb-2">
     <div class="row">
         <div class="col">
-            <h1 class="success">Shopping Bag</h1>
+            <h1 class="text-center">Shopping Bag</h1>
         </div>
     </div>
     <div class="row">
         <div class="col">
             {% if bag_items %}
-            <div class="table-responsive rounded"></div>
+            <div class="d-block d-flex flex-column">
+                {% for item in bag_items %}
+                <div class="mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.product.name }}</h5>
+                        <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{item.product.name}}">
+                        <p class="card-text">Quantity: {{ item.quantity }}</p>
+                        <p class="card-text">Price: {{ item.product.price }}€</p>
+                        <p class="card-text">Subtotal: {{ grand_total }}€</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
             {% else %}
             <p class="mb-5">Your bag is empty</p>
             {% endif %}

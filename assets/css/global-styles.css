@@ -256,6 +256,15 @@ hr {
     color: black;
 }
 
+.bag-has {
+    background-color: #9747FF;
+    border: none;
+}
+
+.bag-has:hover {
+    background-color: #A367F2;
+}
+
 /*------------ theme switcher Icon -------------------- */
 
 #theme-switcher {
