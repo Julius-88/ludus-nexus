@@ -86,14 +86,16 @@
                     </a>
                 </li>
                 {% if user.is_authenticated %}
-                <li class="nav-item m-1">
-                    <a href="{% url 'account_logout' %}">
-                        <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="login-icon"
-                            aria-label="Click here to go to the login page">
-                            <i class="fas fa-address-card fa-lg" aria-hidden="true" title="Log in"></i>
-                            <span class="ml-1">Logout</span>
-                        </button>
-                    </a>
+                <li class="nav-item m-1 dropdown">
+                    <button class="nav-link p-2 d-flex w-100 h-100 align-items-center dropdown-toggle"
+                        data-toggle="dropdown" id="login-icon" aria-label="Click here to go to the login page">
+                        <i class="fas fa-address-card fa-lg" aria-hidden="true" title="Log in"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="dropdown-item" href="{% url 'wishlist' %}">Wishlist</a>
+                        <a class="dropdown-item" href="{% url 'confirm_delete_account' %}">Delete Account</a>
+                    </div>
                 </li>
                 {% else %}
                 <li class="nav-item m-1">
@@ -107,10 +109,12 @@
                 </li>
                 {% endif %}
                 <li class="nav-item m-1">
-                    <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="shopping-cart-icon"
-                        aria-label="Click here to go to the shopping cart">
-                        <i class="fas fa-shopping-cart fa-lg" aria-hidden="true" title="Shopping cart"></i>
-                    </button>
+                    <a href="{% url 'view_bag' %}">
+                        <button class="nav-link p-2 d-flex w-100 h-100 align-items-center" id="shopping-cart-icon"
+                            aria-label="Click here to go to the shopping cart">
+                            <i class="fas fa-shopping-cart fa-lg" aria-hidden="true" title="Shopping cart"></i>
+                        </button>
+                    </a>
                 </li>
             </ul>
         </div>
