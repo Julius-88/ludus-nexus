@@ -38,6 +38,11 @@ def nintendo(request):
     return render(request, 'consoles/nintendo.html', context)
 
 
+def wishlist(request):
+    """ A view to return the wishlist page """
+    return render(request, 'consoles/wishlist.html')
+
+
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
     products = Product.objects.all()

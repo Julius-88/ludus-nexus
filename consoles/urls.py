@@ -5,4 +5,5 @@ urlpatterns = [
     path('playstation/', views.playstation, name="playstation"),
     path('xbox/', views.xbox, name="xbox"),
     path('nintendo/', views.nintendo, name="nintendo"),
+    path('wishlist/', views.wishlist, name="wishlist"),
 ]

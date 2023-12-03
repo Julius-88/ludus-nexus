@@ -8,11 +8,6 @@ def index(request):
     return render(request, 'home/index.html')
 
 
-def wishlist(request):
-    """ A view to return the wishlist page """
-    return render(request, 'home/wishlist.html')
-
-
 # resource
 # https://docs.djangoproject.com/en/4.2/topics/forms/#:~:text=,and%20Form%20and%20field%20validation
 # https://docs.djangoproject.com/en/4.2/ref/forms/
