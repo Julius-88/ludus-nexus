@@ -181,6 +181,21 @@ In addition to the frontend features, all subscriptions are conveniently managed
 
 ![Mailchimp database](./assets/img/newsletter-database.JPG)
 
+# Theme Change
+To enhance user experience, our website remembers the user's theme preference across browsing sessions. This is achieved by utilizing the browser's localStorage feature:
+
+**Local Storage for Preferences**: When a user selects a theme, their choice is saved in the browser’s local storage. This means the next time they visit the website, it will automatically display their preferred theme, providing a consistent and personalized experience.
+
+**No Login Required**: This functionality works without the need for user accounts or logging in, ensuring ease of use and immediate personalization for every visitor.
+
+**Privacy-Friendly**: The use of local storage means that the theme preference is stored locally on the user's device, respecting their privacy and not requiring any server-side data storage or processing.
+
+This simple yet effective use of local storage ensures that users enjoy a tailored browsing experience every time they visit our site.
+
+![Dark Theme](./assets/img/theme-dark.JPG)
+![Light Theme](./assets/img/theme-light.JPG)
+
+
 # Unfixed Bugs
 1. **Mailchimp Subscription Messages Bug:** The Mailchimp subscription form messages (success, error, etc.) do not reset after the modal is closed; they persist until the page is fully reloaded. Despite attempts to override Mailchimp's JavaScript functionality to reset these messages, the issue remains unresolved. The bug has been acknowledged and requires further investigation.
 
