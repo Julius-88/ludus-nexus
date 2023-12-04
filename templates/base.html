@@ -93,6 +93,9 @@
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="dropdown-item {% if user.is_staff %} show {% else %} hide {% endif %}"
+                            href="{% url 'admin:index' %}">Admin
+                            panel</a>
                         <a class="dropdown-item" href="{% url 'wishlist' %}">Wishlist</a>
                         <a class="dropdown-item" href="{% url 'confirm_delete_account' %}">Delete Account</a>
                     </div>
@@ -112,7 +115,7 @@
                     <a href="{% url 'view_bag' %}">
                         <button
                             class="nav-link p-2 d-flex w-100 h-100 align-items-center {% if grand_total %} bag-has {% else %} shopping-cart-icon {% endif %}"
-                             aria-label="Click here to go to the shopping cart">
+                            aria-label="Click here to go to the shopping cart">
                             <i class="fas fa-shopping-cart fa-lg " aria-hidden="true" title="Shopping cart"></i>
                         </button>
                     </a>

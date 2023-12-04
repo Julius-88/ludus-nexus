@@ -278,6 +278,14 @@ hr {
     color: black;
 }
 
+.show {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+
 /*------------ MODAL -------------------- */
 
 .modal-backdrop {
