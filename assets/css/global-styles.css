@@ -154,7 +154,7 @@ hr {
 
 .light-mode #home-icon,
 .light-mode #login-icon,
-.light-mode #shopping-cart-icon,
+.light-mode .shopping-cart-icon,
 .light-mode #theme-switcher {
     background-color: black;
 }
@@ -245,13 +245,13 @@ hr {
 
 /*------------ Shopping Cart Icon -------------------- */
 
-#shopping-cart-icon {
+.shopping-cart-icon {
     background-color: transparent;
     border: 1px solid transparent;
     color: white;
 }
 
-#shopping-cart-icon:hover {
+.shopping-cart-icon:hover {
     background-color: white;
     color: black;
 }
