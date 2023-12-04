@@ -127,6 +127,10 @@ Below are images showcasing the Facebook page and the dedicated business Gmail a
 
 ![Gmail Account](./assets/img/gmail-account.JPG)
 
+**Call to Action (CTA) on Facebook:** This feature was not implemented. While exploring options for adding a CTA button on Facebook, I encountered several choices. However, it was unclear whether these options would incur charges, and none matched the straightforward approach demonstrated in the tutorial video. To avoid potential costs and complexity, I decided not to implement a Facebook CTA button at this stage.
+
+![Choosing a CTA button on Facebook](./assets/img/facebook-cta.JPG)
+
 
 # Features
 ## Privacy Policy Modal
