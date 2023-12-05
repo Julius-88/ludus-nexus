@@ -1,0 +1,7 @@
+/*---------------Stripe----------------------- */
+
+.StripeElement,
+.stripe-style-input {
+  padding: 10px 30px;
+  background-color: #242526;
+}

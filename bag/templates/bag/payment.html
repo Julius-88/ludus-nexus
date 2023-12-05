@@ -1,17 +1,25 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'bag/css/stripe.css' %}">
+{% endblock %}
+{% block extra_title %}| Payment{% endblock %}
+
 
 {% block content %}
-<section class="payment-section">
-    <h1>Payment Details</h1>
+<section class="payment-section d-flex flex-column justify-content-center h-100">
+    <h1 class="mb-5 text-center">Payment Details</h1>
     <form method="POST" id="payment-form" action="{% url 'process_payment' order_id %}">
         {% csrf_token %}
-        <div id="card-element" class="form-group">
+        <div id="card-element" aria-label="Add credit card info here" class="form-group p-5 rounded">
             <!-- A Stripe Element will be inserted here. -->
         </div>
         <!-- Display card errors -->
         <div id="card-errors" role="alert"></div>
-        <button type="submit" class="btn cta">Submit Payment</button>
+        <div class="d-flex flex-column align-items-center mx-5">
+            <button type="submit" class="btn cta mt-3 w-25" aria-label="Click here to submit payment">Submit
+                Payment</button>
+        </div>
     </form>
 </section>
 {% endblock %}
