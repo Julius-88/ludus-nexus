@@ -1,0 +1,19 @@
+{% load static %}
+<div class="order-summary">
+    {% for item in order.orderdetails.all %}
+    <div class="order-item">
+        <h4>Order Number: {{ order.order_number }}</h4>
+        <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="order-item-image">
+        <div class="order-item-details">
+            <h5>{{ item.product.name }}</h5>
+            <p>Quantity: {{ item.quantity }}</p>
+            <p>Price: {{ item.product.price }}</p>
+            <p>Date: {{ order.order_date }}</p>
+            <p>Shipping Address: {{ order.shipping_address }}</p>
+            <p>Total Price: {{ order.total_price }}</p>
+            <div class="order-items">
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

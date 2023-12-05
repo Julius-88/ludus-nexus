@@ -23,10 +23,15 @@ class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     order_date = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=100)
-    shipping_address = models.CharField(max_length=500)
+    address = models.CharField(max_length=255, null=False, blank=False,)
+    postcode = models.CharField(max_length=20, null=False, blank=False)
+    city = models.CharField(max_length=100, null=False, blank=False)
     payment_method = models.CharField(max_length=100)
     payment_status = models.CharField(max_length=100)
-    total_price = models.DecimalField(max_digits=8, decimal_places=2)
+    total_price = models.DecimalField(
+        max_digits=8,
+        decimal_places=2,
+        default=0)
 
     def _generate_order_number(self):
         """ Generate a random, unique order number using UUID """
@@ -34,8 +39,9 @@ class Order(models.Model):
 
     def update_total(self):
         """Update grand total each time a line item is added"""
-        self.total_price = self.orderdetails_aggregate(
-            Sum('orderdetail_total'))['orderdetail_total_sum'] or 0
+        total_sum = self.orderdetails.aggregate(
+            total=Sum('orderdetail_total'))['total'] or 0
+        self.total_price = total_sum
         self.save()
 
     def save(self, *args, **kwargs):

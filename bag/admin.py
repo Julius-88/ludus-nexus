@@ -15,7 +15,9 @@ class OrderAdmin(admin.ModelAdmin):
         'order_number',
         'order_date',
         'user',
-        'shipping_address',
+        'address',
+        'postcode',
+        'city',
         'payment_method',
         'payment_status',
         'total_price')
@@ -24,7 +26,9 @@ class OrderAdmin(admin.ModelAdmin):
         'order_number',
         'order_date',
         'user',
-        'shipping_address',
+        'address',
+        'postcode',
+        'city',
         'payment_method',
         'payment_status',
         'total_price')
