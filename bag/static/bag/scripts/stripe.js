@@ -1,5 +1,3 @@
-// stripe.js
-
 // Create a Stripe client
 var stripe = Stripe('pk_test_51OJvJmCxanRbXUrs3zfxRICEktmGIY0cMpSBgJIXe8nuk49EelKUFHKYv8Gd2M77bIiHIGwjCrsAnWyAhEzPsOLA00LO64JN37');
 
@@ -50,7 +48,7 @@ form.addEventListener('submit', function (event) {
       var errorElement = document.getElementById('card-errors');
       errorElement.textContent = result.error.message;
     } else {
-      // Send the token to your server
+      // Send the token to server
       stripeTokenHandler(result.token);
     }
   });
@@ -65,6 +63,5 @@ function stripeTokenHandler(token) {
   hiddenInput.setAttribute('value', token.id);
   form.appendChild(hiddenInput);
 
-  // Submit the form
   form.submit();
 }

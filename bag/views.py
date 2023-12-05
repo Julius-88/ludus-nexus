@@ -22,7 +22,7 @@ def payment(request, order_id):
     """ A view to return the payment page """
     order = get_object_or_404(Order, id=order_id)
 
-    # Calculate total for Stripe (assuming total_price is the total amount)
+    # Calculate total for Stripe
     stripe_total = int(order.total_price * 100)
 
     # Create a Stripe PaymentIntent
@@ -61,11 +61,15 @@ def process_payment(request, order_id):
 
             # Redirect to the success page
             return redirect('success', order_id=order.id)
-        except stripe.error.CardError:
+        except stripe.error.CardError as e:
             # Handle Stripe Card Error
-            pass
+            context = {
+                'order_id': order_id,
+                'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                'error_message': e.user_message,
+            }
+            return render(request, 'bag/payment.html', context)
 
-    # Redirect back to the payment page (possibly with a general error message)
     return redirect('success', order_id=order.id)
 
 

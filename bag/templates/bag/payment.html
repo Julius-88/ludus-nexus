@@ -6,7 +6,6 @@
     <h1>Payment Details</h1>
     <form method="POST" id="payment-form" action="{% url 'process_payment' order_id %}">
         {% csrf_token %}
-        <!-- Stripe Elements will be inserted here -->
         <div id="card-element" class="form-group">
             <!-- A Stripe Element will be inserted here. -->
         </div>
