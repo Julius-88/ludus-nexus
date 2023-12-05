@@ -11,4 +11,10 @@ urlpatterns = [
         views.order_confirmation,
         name='order_confirmation'),
     path('user-orders/', views.user_orders, name='user_orders'),
+    path('success/<int:order_id>/', views.success, name='success'),
+    path('payment/<int:order_id>/', views.payment, name='payment'),
+    path(
+        'process-payment/<int:order_id>/',
+        views.process_payment,
+        name='process_payment'),
 ]

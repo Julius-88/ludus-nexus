@@ -9,11 +9,13 @@
             <p>Quantity: {{ item.quantity }}</p>
             <p>Price: {{ item.product.price }}</p>
             <p>Date: {{ order.order_date }}</p>
-            <p>Shipping Address: {{ order.shipping_address }}</p>
-            <p>Total Price: {{ order.total_price }}</p>
-            <div class="order-items">
-            </div>
+            <p>Address: {{ order.address }}</p>
+            <p>Post Code: {{ order.postcode }}</p>
+            <p>City: {{ order.city }}</p>
         </div>
         {% endfor %}
+        <div class="order-items">
+            <p>Total Price: {{ order.total_price }}</p>
+        </div>
     </div>
 </div>
