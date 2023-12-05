@@ -9,8 +9,7 @@ class UserProfile(models.Model):
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE)
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
+    full_name = models.CharField(max_length=100)
     newsletter_subscribed = models.BooleanField(default=False)
 
     def __str__(self):
@@ -24,10 +23,15 @@ class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     order_date = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=100)
-    shipping_address = models.CharField(max_length=255)
+    address = models.CharField(max_length=255, null=False, blank=False,)
+    postcode = models.CharField(max_length=20, null=False, blank=False)
+    city = models.CharField(max_length=100, null=False, blank=False)
     payment_method = models.CharField(max_length=100)
     payment_status = models.CharField(max_length=100)
-    total_price = models.DecimalField(max_digits=8, decimal_places=2)
+    total_price = models.DecimalField(
+        max_digits=8,
+        decimal_places=2,
+        default=0)
 
     def _generate_order_number(self):
         """ Generate a random, unique order number using UUID """
@@ -35,12 +39,13 @@ class Order(models.Model):
 
     def update_total(self):
         """Update grand total each time a line item is added"""
-        self.order_total = self.orderdetails_aggregate(
-            Sum('orderdetail_total'))['orderdetail_total_sum'] or 0
+        total_sum = self.orderdetails.aggregate(
+            total=Sum('orderdetail_total'))['total'] or 0
+        self.total_price = total_sum
         self.save()
 
     def save(self, *args, **kwargs):
-        """Override the original save method to set the orde rnumber if it has
+        """Override the original save method to set the order number if it has
          not been set already"""
         if not self.order_number:
             self.order_number = self._generate_order_number()
@@ -54,7 +59,7 @@ class OrderDetail(models.Model):
     order = models.ForeignKey(
         Order,
         on_delete=models.CASCADE,
-        related_name='orderdetail')
+        related_name='orderdetails')
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     orderdetail_total = models.DecimalField(
@@ -65,10 +70,9 @@ class OrderDetail(models.Model):
         editable=False)
 
     def save(self, *args, **kwargs):
-        """Override the original save method to set the orde rnumber if it has
-         not been set already"""
-        self.lineitem_total = self.product.price * self.quantity
-        super().save(*args, **kwargs)
+        """Calculate orderdetail_total before saving"""
+        self.orderdetail_total = self.product.price * self.quantity
+        super(OrderDetail, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.order.order_number

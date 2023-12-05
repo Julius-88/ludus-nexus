@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from .models import Order, OrderDetail, Product
+from django.contrib.auth.decorators import login_required
 
 
 def view_bag(request):
@@ -38,3 +40,57 @@ def remove_from_bag(request, product_id):
 
     request.session['bag'] = bag
     return redirect(redirect_url)
+
+
+@login_required
+def checkout(request):
+    if request.method == 'POST':
+        address = request.POST.get('address')
+        postcode = request.POST.get('postcode')
+        city = request.POST.get('city')
+
+        # Create Order instance
+        order = Order.objects.create(
+            user=request.user,
+            address=address,
+            postcode=postcode,
+            city=city,
+        )
+
+        # Retrieve cart from session
+        cart = request.session.get('bag', {})
+
+        # Create OrderDetail for each item in the cart
+        for product_id, quantity in cart.items():
+            product = Product.objects.get(id=product_id)
+            OrderDetail.objects.create(
+                order=order,
+                product=product,
+                quantity=quantity,
+                orderdetail_total=product.price * quantity
+            )
+
+        # Update the order total
+        order.update_total()
+
+        # Clear the cart from session
+        request.session['bag'] = {}
+
+        # Redirect to order confirmation page with order's id
+        return redirect('order_confirmation', order_id=order.id)
+
+    return render(request, 'bag/checkout.html')
+
+
+def order_confirmation(request, order_id):
+    order = Order.objects.get(id=order_id)
+    context = {
+        'order': order
+        }
+    return render(request, 'bag/order_confirmation.html', context)
+
+
+@login_required
+def user_orders(request):
+    orders = Order.objects.filter(user=request.user).order_by('-order_date')
+    return render(request, 'bag/user_orders.html', {'orders': orders})

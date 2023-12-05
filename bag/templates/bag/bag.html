@@ -16,6 +16,11 @@
                         <p class="card-text">Price: {{ item.product.price }}€</p>
                         <p class="card-text">Subtotal: {{ grand_total }}€</p>
                         {% include 'includes/remove.html' with product_id=item.product.id %}
+                        <a href="{% url 'checkout' %}">
+                            <button class="cta btn mt-3" type="submit">
+                                Proceed to checkout
+                            </button>
+                        </a>
                     </div>
                 </div>
                 {% endfor %}
