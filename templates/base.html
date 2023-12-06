@@ -88,16 +88,16 @@
                 {% if user.is_authenticated %}
                 <li class="nav-item m-1 dropdown">
                     <button class="nav-link p-2 d-flex w-100 h-100 align-items-center dropdown-toggle"
-                        data-toggle="dropdown" id="login-icon" aria-label="Click here to go to the login page">
-                        <i class="fas fa-address-card fa-lg" aria-hidden="true" title="Log in"></i>
+                        data-toggle="dropdown" id="login-icon" aria-label="Click here to go to the account page">
+                        <i class="fas fa-address-card fa-lg" aria-hidden="true" title="Account"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
                         <a class="dropdown-item {% if user.is_staff %} show {% else %} hide {% endif %}"
                             href="{% url 'admin:index' %}">Admin
                             Panel</a>
-                        <a class="dropdown-item" href="{% url 'order_history' %}">My Orders</a>
-                        <a class="dropdown-item" href="{% url 'confirm_delete_account' %}">Delete Account</a>
+                        <a class="dropdown-item" href="{% url 'order_history' %}" title="My Orders" aria-label="Click here to go to find your receipts">My Orders</a>
+                        <a class="dropdown-item" href="{% url 'confirm_delete_account' %}" title="Delete Account" aria-label="Click here to delete your account">Delete Account</a>
                     </div>
                 </li>
                 {% else %}
