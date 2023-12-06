@@ -195,6 +195,25 @@ This simple yet effective use of local storage ensures that users enjoy a tailor
 ![Dark Theme](./assets/img/theme-dark.JPG)
 ![Light Theme](./assets/img/theme-light.JPG)
 
+# Products
+Visitors to Ludus Nexus can easily explore a wide range of gaming products tailored for Playstation, Xbox, and Nintendo, directly accessible from the navbar.
+
+## Efficient Navigation & Detailed Insights:
+
+- **Subcategories:** Each product page can be neatly categorized into three sections: Games, Consoles, and Accessories, offering a streamlined browsing experience. Allowing users to filter the displayed products, makes it easier to find items aligned with their interests.
+
+![Playstation Product Page](./assets/img/playstation-product-page.JPG)
+
+- **Product Descriptions:** Each product features a "Describe" button. Clicking on this provides a concise description, offering insights into the product's features and appeal.
+
+![Description Button](./assets/img/description-btn.JPG)
+
+- **Product Header:** The header dynamically adjusts based on the current page, ensuring a seamless experience across devices in addition to enabling the mobile users to reset the view and see all available products with ease.
+
+![Xbox Header](./assets/img/xbox-product-page.JPG)
+
+![Nintendo Header Mobile](./assets/img/nintendo-product-page.JPG)
+
 # Staff Registration and Management
 
 **Staff:** A staff can be registered by an existing admin. This registration can only be done from Django Admin Panel.
