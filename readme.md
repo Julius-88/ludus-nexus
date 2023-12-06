@@ -37,7 +37,7 @@ The selected color palette reflects the essence of gaming culture, balancing vis
 - Placeholder Text & HR: Grey (E5E5E5) for subtlety and clarity.
 - Input Fields: Eerie Black (242526) for a sleek, modern look.
 
-![Dark Mode](./assets/img/dark-mode.png)
+![Dark Mode](./static/img/dark-mode.png)
 
 ### Light Mode
 - Background: Grey (E5E5E5) for a softer, eye-friendly backdrop.
@@ -45,7 +45,7 @@ The selected color palette reflects the essence of gaming culture, balancing vis
 - Items & Input fields: White (FFFFFF) for a clean and clear interface.
 - Placeholder Text & HR: Black Olive (42413C) for a subtle yet distinct appearance.
 
-![Light Mode](./assets/img/light-mode.png)
+![Light Mode](./static/img/light-mode.png)
 
 ### CTA
 - CTA Colors: Veronica (9747FF) as the primary color, transitioning to Amethyst (A367F2) on hover for interactivity.
@@ -58,7 +58,7 @@ The design embraces the vibrant identities of the selected gaming consoles by in
 - Xbox Green (#107B10) for primary display, transitioning to Xbox Hover Green (#228822) upon hover.
 - Nintendo Red (#E60012) for primary display, transitioning to Nintendo Hover Red (#E71B2B) upon hover.
 
-![CTA and Console Colors](./assets/img/cta-console-colors.png)
+![CTA and Console Colors](./static/img/cta-console-colors.png)
 
 # Design Updates
 These updates are part of our continuous effort to improve user experience and website aesthetics.
@@ -79,7 +79,7 @@ These updates are part of our continuous effort to improve user experience and w
 # Database Schema
 The database schema depicted below outlines the foundational structure of the Ludus Nexus e-commerce platform, detailing how various data elements such as users, products, and events are interconnected. This schema serves as a blueprint for the database's initial development, with the understanding that alterations may occur as the project evolves to accommodate new requirements or improvements.
 
-![Database Schema](./assets/img/database-schema.JPG)
+![Database Schema](./static/img/database-schema.JPG)
 
 1. **Users**: This table holds essential data about the users of the platform, such as their login credentials and contact information. It's the central point for managing user accounts and is linked to **Orders**, **EventNotifications**, and **WishList**. Allowing for functionalities like tracking order history, managing event interests, and saving favorite products.
 
@@ -113,23 +113,23 @@ Below are images showcasing the Facebook page and the dedicated business Gmail a
 
 **Top of Facebook Page**
 
-![Facebook images](./assets/img/facebook-page-p1.JPG)
+![Facebook images](./static/img/facebook-page-p1.JPG)
 
 **Middle of Facebook Page**
 
-![Facebook images](./assets/img/facebook-page-p2.JPG)
+![Facebook images](./static/img/facebook-page-p2.JPG)
 
 **Bottom of Facebook Page**
 
-![Facebook images](./assets/img/facebook-page-p3.JPG)
+![Facebook images](./static/img/facebook-page-p3.JPG)
 
 **Gmail Account**
 
-![Gmail Account](./assets/img/gmail-account.JPG)
+![Gmail Account](./static/img/gmail-account.JPG)
 
 **Call to Action (CTA) on Facebook:** This feature was not implemented. While exploring options for adding a CTA button on Facebook, I encountered several choices. However, it was unclear whether these options would incur charges, and none matched the straightforward approach demonstrated in the tutorial video. To avoid potential costs and complexity, I decided not to implement a Facebook CTA button at this stage.
 
-![Choosing a CTA button on Facebook](./assets/img/facebook-cta.JPG)
+![Choosing a CTA button on Facebook](./static/img/facebook-cta.JPG)
 
 
 # Features
@@ -140,11 +140,11 @@ To enhance user convenience and transparency, a Privacy Policy modal has been in
 
 **Privacy Policy Button**
 
-![Privacy Policy Button](./assets/img/privacy-policy-button.JPG) 
+![Privacy Policy Button](./static/img/privacy-policy-button.JPG) 
 
 **Privacy Policy Modal**
 
-![Privacy Policy Opened](./assets/img/privacy-policy-opened.JPG)
+![Privacy Policy Opened](./static/img/privacy-policy-opened.JPG)
 
 ## 404 Error Page
 Our website includes a custom 404 error page designed to clearly communicate to users when they have encountered a non-existent page or a broken link. The page features a clear and concise message, "PAGE NOT WORKING," ensuring users are immediately aware of the error.
@@ -153,33 +153,33 @@ The 404 page also includes a prominent Home button. This feature allows users to
 ## Newsletter Signup
 A user-friendly newsletter signup modal has been integrated into the footer. This modal enables visitors to subscribe to our newsletter easily.
 
-![Newsletter button](./assets/img/newsletter-button.JPG)
+![Newsletter button](./static/img/newsletter-button.JPG)
 
 **Registration Process:** Users can enter their email address in the modal to subscribe.
 
-![Sign up modal](./assets/img/newsletter-modal.JPG)
+![Sign up modal](./static/img/newsletter-modal.JPG)
 
 **Feedback on Subscription:**
 
 - A confirmation message appears for successful signups.
 
-![Success Message](./assets/img/newsletter-success.JPG)
+![Success Message](./static/img/newsletter-success.JPG)
 
 - An alert notifies users if they are already subscribed.
 
-![Already Subscribed](./assets/img/newsletter-existing.JPG)
+![Already Subscribed](./static/img/newsletter-existing.JPG)
 
 - An error message is displayed for invalid email inputs.
 
-![Error Message](./assets/img/newsletter-invalid.JPG)
+![Error Message](./static/img/newsletter-invalid.JPG)
 
 - A prompt indicates if the email field is left empty.
 
-![Required Message](./assets/img/newsletter-emptyfield.JPG)
+![Required Message](./static/img/newsletter-emptyfield.JPG)
 
 In addition to the frontend features, all subscriptions are conveniently managed and visible in the MailChimp database, allowing for efficient user engagement and communication tracking.
 
-![Mailchimp database](./assets/img/newsletter-database.JPG)
+![Mailchimp database](./static/img/newsletter-database.JPG)
 
 # Theme Change
 To enhance user experience, our website remembers the user's theme preference across browsing sessions. This is achieved by utilizing the browser's localStorage feature:
@@ -192,8 +192,8 @@ To enhance user experience, our website remembers the user's theme preference ac
 
 This simple yet effective use of local storage ensures that users enjoy a tailored browsing experience every time they visit our site.
 
-![Dark Theme](./assets/img/theme-dark.JPG)
-![Light Theme](./assets/img/theme-light.JPG)
+![Dark Theme](./static/img/theme-dark.JPG)
+![Light Theme](./static/img/theme-light.JPG)
 
 # Products
 Visitors to Ludus Nexus can easily explore a wide range of gaming products tailored for Playstation, Xbox, and Nintendo, directly accessible from the navbar.
@@ -202,96 +202,96 @@ Visitors to Ludus Nexus can easily explore a wide range of gaming products tailo
 
 - **Subcategories:** Each product page can be neatly categorized into three sections: Games, Consoles, and Accessories, offering a streamlined browsing experience. Allowing users to filter the displayed products, makes it easier to find items aligned with their interests.
 
-![Playstation Product Page](./assets/img/playstation-product-page.JPG)
+![Playstation Product Page](./static/img/playstation-product-page.JPG)
 
 - **Product Descriptions:** Each product features a "Describe" button. Clicking on this provides a concise description, offering insights into the product's features and appeal.
 
-![Description Button](./assets/img/description-btn.JPG)
+![Description Button](./static/img/description-btn.JPG)
 
 - **Product Header:** The header dynamically adjusts based on the current page, ensuring a seamless experience across devices in addition to enabling the mobile users to reset the view and see all available products with ease.
 
-![Xbox Header](./assets/img/xbox-product-page.JPG)
+![Xbox Header](./static/img/xbox-product-page.JPG)
 
-![Nintendo Header Mobile](./assets/img/nintendo-product-page.JPG)
+![Nintendo Header Mobile](./static/img/nintendo-product-page.JPG)
 
 # Staff Registration and Management
 
 **Staff:** A staff can be registered by an existing admin. This registration can only be done from Django Admin Panel.
 
-![User Creation](./assets/img/admin-creation.JPG)
+![User Creation](./static/img/admin-creation.JPG)
 
 Once the user is created, you are directed to a more detailed view, where you can add more user detail and which permissions they should have. An admin group has been created with full priviledge. More groups can be made with specific permissions if needed.
 
-![User Detail](./assets/img/admin-user-detail.JPG)
-![User Detail Two](./assets/img/admin-user-detail2.JPG)
+![User Detail](./static/img/admin-user-detail.JPG)
+![User Detail Two](./static/img/admin-user-detail2.JPG)
 
 The staff member can log-in to their account through the website via the regular login button in the navbar which users also have access to. The sign-in also has a remember me tickbox.
 
-![Sign In](./assets/img/sign-in-page.JPG)
+![Sign In](./static/img/sign-in-page.JPG)
 
 Once they are logged in, they can access the Django Admin panel via the previous login button that has now become an account button. The admin panel inside the account button is only available to staff members.
 
-![Admin Panel](./assets/img/admin-panel.JPG)
+![Admin Panel](./static/img/admin-panel.JPG)
 
 Once logged in depending on their permissions they have access to all content through the databases.
 
-![Admin Databases](./assets/img/admin-database.JPG)
-![Add Product](./assets/img/add-product.JPG)
+![Admin Databases](./static/img/admin-database.JPG)
+![Add Product](./static/img/add-product.JPG)
 
 All changes made will show immediately on page.
 
-![Added Product](./assets/img/added-product.JPG)
+![Added Product](./static/img/added-product.JPG)
 
 # User Experience
 
 The initial interface presents an overview of the site, encouraging new users to create accounts for a personalized experience.
 Essential links like the privacy policy, contact information, and newsletter signup are located in the footer for easy access.
 
-![Home Page](./assets/img/home-page.JPG)
+![Home Page](./static/img/home-page.JPG)
 
 Users can select from Playstation, Xbox, or Nintendo categories via the navbar. Each product section includes subcategories for Games, Consoles, and Accessories, with filtering functionality.
 
 The shopping cart icon in the navbar changes to purple when items are added, signaling items in the cart.
 
-![Shopping Cart Icon](./assets/img/shopping-cart-icon.JPG)
+![Shopping Cart Icon](./static/img/shopping-cart-icon.JPG)
 
 The shopping bag page allows users to review their selections, adjust quantities, remove items, and see the subtotal for each product and the total cost.
 
-![Shopping](./assets/img/shopping.JPG)
+![Shopping](./static/img/shopping.JPG)
 
-![Shopping Bag](./assets/img/shopping-bag.JPG)
+![Shopping Bag](./static/img/shopping-bag.JPG)
 
-![Shopping Bag Two](./assets/img/shopping-bag2.JPG)
+![Shopping Bag Two](./static/img/shopping-bag2.JPG)
 
 A straightforward checkout process where users fill in shipping details.
 
-![Checkout](./assets/img/checkout.JPG)
+![Checkout](./static/img/checkout.JPG)
 
 Stripe integration is used for secure payment processing. The interface provides feedback for successful transactions and input errors.
 
-![Payment](./assets/img/payment.JPG)
+![Payment](./static/img/payment.JPG)
 
-![Success](./assets/img/success.JPG)
+![Success](./static/img/success.JPG)
 
-![Success Stripe](./assets/img/success-payment.JPG)
+![Success Stripe](./static/img/success-payment.JPG)
 
-![Input Error](./assets/img/error.JPG)
+![Input Error](./static/img/error.JPG)
 
 Post-purchase, users receive an order confirmation with a unique order number. Registered users can access their order history and receipts.
 
-![Receite](./assets/img/receites.JPG)
+![Receite](./static/img/receites.JPG)
 
-![Receite](./assets/img/receites2.JPG)
+![Receite](./static/img/receites2.JPG)
 
 The site includes functionalities for account management, including logout, viewing past orders, and account deletion, with confirmation prompts for safety.
 
-![Sign Out](./assets/img/signout.JPG)
+![Sign Out](./static/img/signout.JPG)
 
-![Delete Account](./assets/img/delete.JPG)
+![Delete Account](./static/img/delete.JPG)
 
 The sign-in page provides options for new account creation and password recovery.
 
-![Sign In](./assets/img/signin.JPG)
+![Sign In](./static/img/signin.JPG)
 
 
 
@@ -302,7 +302,7 @@ The sign-in page provides options for new account creation and password recovery
 # Unfixed Bugs
 1. **Mailchimp Subscription Messages Bug:** The Mailchimp subscription form messages (success, error, etc.) do not reset after the modal is closed; they persist until the page is fully reloaded. Despite attempts to override Mailchimp's JavaScript functionality to reset these messages, the issue remains unresolved. The bug has been acknowledged and requires further investigation.
 
-![Mailchimp code](./assets/img/mailchimp-bug.JPG)
+![Mailchimp code](./static/img/mailchimp-bug.JPG)
 
 2. **Favicon.io - 401 Error Issue:** Recently, the favicon icons for the website have stopped loading, and a "401 Error" is being displayed in the browser's console. This issue occurred without any known changes to the static files or their configurations in Django.
 This error prevents the favicon from being displayed in browser tabs, impacting the visual identification of the site.
