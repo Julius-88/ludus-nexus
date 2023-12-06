@@ -223,7 +223,9 @@ All changes made will show immediately on page.
 
 ![Added Product](./assets/img/added-product.JPG)
 
+# User Experience
 
+When a user comes to the page
 
 
 
