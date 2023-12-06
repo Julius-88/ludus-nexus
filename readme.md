@@ -195,6 +195,38 @@ This simple yet effective use of local storage ensures that users enjoy a tailor
 ![Dark Theme](./assets/img/theme-dark.JPG)
 ![Light Theme](./assets/img/theme-light.JPG)
 
+# Staff Registration and Management
+
+**Staff:** A staff can be registered by an existing admin. This registration can only be done from Django Admin Panel.
+
+![User Creation](./assets/img/admin-creation.JPG)
+
+Once the user is created, you are directed to a more detailed view, where you can add more user detail and which permissions they should have. An admin group has been created with full priviledge. More groups can be made with specific permissions if needed.
+
+![User Detail](./assets/img/admin-user-detail.JPG)
+![User Detail Two](./assets/img/admin-user-detail2.JPG)
+
+The staff member can log-in to their account through the website via the regular login button in the navbar which users also have access to. The sign-in also has a remember me tickbox.
+
+![Sign In](./assets/img/sign-in-page.JPG)
+
+Once they are logged in, they can access the Django Admin panel via the previous login button that has now become an account button. The admin panel inside the account button is only available to staff members.
+
+![Admin Panel](./assets/img/admin-panel.JPG)
+
+Once logged in depending on their permissions they have access to all content through the databases.
+
+![Admin Databases](./assets/img/admin-database.JPG)
+![Add Product](./assets/img/add-product.JPG)
+
+All changes made will show immediately on page.
+
+![Added Product](./assets/img/added-product.JPG)
+
+
+
+
+
 
 # Unfixed Bugs
 1. **Mailchimp Subscription Messages Bug:** The Mailchimp subscription form messages (success, error, etc.) do not reset after the modal is closed; they persist until the page is fully reloaded. Despite attempts to override Mailchimp's JavaScript functionality to reset these messages, the issue remains unresolved. The bug has been acknowledged and requires further investigation.
