@@ -273,6 +273,8 @@ Stripe integration is used for secure payment processing. The interface provides
 
 ![Success](./assets/img/success.JPG)
 
+![Success Stripe](./assets/img/success-payment.JPG)
+
 ![Input Error](./assets/img/error.JPG)
 
 Post-purchase, users receive an order confirmation with a unique order number. Registered users can access their order history and receipts.
