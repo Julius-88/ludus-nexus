@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% block extra_title %}| Shopping Bag{% endblock %}
+
 {% block content %}
 <section class="container mb-2">
     <div class="row">
@@ -16,17 +19,20 @@
                         <p class="card-text">Price: {{ item.product.price }}€</p>
                         <p class="card-text">Subtotal: {{ grand_total }}€</p>
                         {% include 'includes/remove.html' with product_id=item.product.id %}
-                        <a href="{% url 'checkout' %}">
-                            <button class="cta btn mt-3" type="submit">
-                                Proceed to checkout
-                            </button>
-                        </a>
                     </div>
                 </div>
                 {% endfor %}
+                <div class="d-flex flex-column align-items-center">
+                    <a href="{% url 'checkout' %}">
+                    <button class="cta btn mt-3 w-100 " aria-label="Click here to proceed to checkout" title="Checkout"
+                        type="submit">
+                            Proceed to checkout
+                        </button>
+                    </a>
+                </div>
             </div>
             {% else %}
-            <h1 class="text-center">Shopping Bag Empty</h1>
+            <h1 class="text-center" aria-label="Your Shopping Bag is Empty">Shopping Bag Empty</h1>
             {% endif %}
         </div>
     </div>
