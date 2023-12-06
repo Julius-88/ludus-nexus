@@ -210,3 +210,4 @@ The issue is under investigation, and a solution has not yet been implemented.
 - **FontAwesome**: Provides various icons used across the site. [fontawesome.com](https://fontawesome.com/)
 - **Bootstrap v4.6**: Primary CSS framework used for designing the website. [getbootstrap.com](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 - **JQuery**: Utilized for JavaScript coding enhancements. [jquery.com](https://jquery.com/)
+- **Stripe**: Using Stripe as a payment system. [Stripe](https://stripe.com/docs)
