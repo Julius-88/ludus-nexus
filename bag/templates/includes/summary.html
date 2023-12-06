@@ -1,21 +1,21 @@
 {% load static %}
 <div class="order-summary">
     {% for item in order.orderdetails.all %}
-    <div class="order-item">
-        <h4>Order Number: {{ order.order_number }}</h4>
-        <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="order-item-image">
-        <div class="order-item-details">
+    <div class="order-item d-flex flex-column justify-content-center align-items-center">
+        <h4 class="small m-1">Order Number: {{ order.order_number }}</h4>
+        <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="order-item-image m-2">
+        <div class="order-item-details d-flex flex-column justify-content-center align-items-center m-1">
             <h5>{{ item.product.name }}</h5>
             <p>Quantity: {{ item.quantity }}</p>
-            <p>Price: {{ item.product.price }}</p>
+            <p>Price: {{ item.orderdetail_total|floatformat:0 }}</p>
             <p>Date: {{ order.order_date }}</p>
             <p>Address: {{ order.address }}</p>
             <p>Post Code: {{ order.postcode }}</p>
             <p>City: {{ order.city }}</p>
         </div>
         {% endfor %}
-        <div class="order-items">
-            <p>Total Price: {{ order.total_price }}</p>
+        <div class="order-items d-flex flex-column justify-content-center align-items-center">
+            <p>Total Price: {{ order.total_price|floatformat:0 }}</p>
         </div>
     </div>
 </div>

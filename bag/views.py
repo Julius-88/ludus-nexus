@@ -131,10 +131,12 @@ def checkout(request):
         total_price = 0
         for product_id, quantity in cart.items():
             product = Product.objects.get(id=product_id)
+            subtotal = product.price * quantity
             order_detail = OrderDetail.objects.create(
                 order=order,
                 product=product,
-                quantity=quantity
+                quantity=quantity,
+                orderdetail_total=subtotal
             )
             total_price += order_detail.orderdetail_total
 
@@ -151,12 +153,12 @@ def checkout(request):
         return render(request, 'bag/checkout.html')
 
 
-def order_confirmation(request, order_id):
+def order_receipt(request, order_id):
     order = get_object_or_404(Order, id=order_id)
-    return render(request, 'bag/order_confirmation.html', {'order': order})
+    return render(request, 'bag/order_receipt.html', {'order': order})
 
 
 @login_required
-def user_orders(request):
+def order_history(request):
     orders = Order.objects.filter(user=request.user).order_by('-order_date')
-    return render(request, 'bag/user_orders.html', {'orders': orders})
+    return render(request, 'bag/order_history.html', {'orders': orders})

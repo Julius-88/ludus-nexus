@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_title %}| Order History{% endblock %}
+{% block content %}
+<h1 class="text-center">Your Order History</h1>
+{% for order in orders %}
+<hr>
+<a href="{% url 'order_receipt' order_id=order.id %}" class="hover-border text-center" title="View Receipt" aria-label="Click here to view your order in detail">View Receipt</a>
+<div class="order-history-item">
+    {% include 'includes/summary.html' %}
+</div>
+{% empty %}
+<p>You have no orders.</p>
+{% endfor %}
+
+{% endblock %}

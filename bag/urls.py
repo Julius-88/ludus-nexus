@@ -7,10 +7,10 @@ urlpatterns = [
     path('add/<product_id>', views.add_to_bag, name="add_to_bag"),
     path('remove/<product_id>', views.remove_from_bag, name="remove_from_bag"),
     path(
-        'order-confirmation/<int:order_id>/',
-        views.order_confirmation,
-        name='order_confirmation'),
-    path('user-orders/', views.user_orders, name='user_orders'),
+        'order-receipt/<int:order_id>/',
+        views.order_receipt,
+        name='order_receipt'),
+    path('order-history/', views.order_history, name='order_history'),
     path('success/<int:order_id>/', views.success, name='success'),
     path('payment/<int:order_id>/', views.payment, name='payment'),
     path(
