@@ -6,7 +6,7 @@
 
 {% block content %}
 <section class="d-flex flex-column justify-content-center align-items-center h-100">
-  <h1 class="mb-5">Sign Out</h1>
+  <h1 class="mb-5">Sign Out?</h1>
   <form method="post" action="{% url 'account_logout' %}">
     {% csrf_token %}
     {% if redirect_field_value %}

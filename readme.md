@@ -244,7 +244,55 @@ All changes made will show immediately on page.
 
 # User Experience
 
-When a user comes to the page
+The initial interface presents an overview of the site, encouraging new users to create accounts for a personalized experience.
+Essential links like the privacy policy, contact information, and newsletter signup are located in the footer for easy access.
+
+![Home Page](./assets/img/home-page.JPG)
+
+Users can select from Playstation, Xbox, or Nintendo categories via the navbar. Each product section includes subcategories for Games, Consoles, and Accessories, with filtering functionality.
+
+The shopping cart icon in the navbar changes to purple when items are added, signaling items in the cart.
+
+![Shopping Cart Icon](./assets/img/shopping-cart-icon.JPG)
+
+The shopping bag page allows users to review their selections, adjust quantities, remove items, and see the subtotal for each product and the total cost.
+
+![Shopping](./assets/img/shopping.JPG)
+
+![Shopping Bag](./assets/img/shopping-bag.JPG)
+
+![Shopping Bag Two](./assets/img/shopping-bag2.JPG)
+
+A straightforward checkout process where users fill in shipping details.
+
+![Checkout](./assets/img/checkout.JPG)
+
+Stripe integration is used for secure payment processing. The interface provides feedback for successful transactions and input errors.
+
+![Payment](./assets/img/payment.JPG)
+
+![Success](./assets/img/success.JPG)
+
+![Input Error](./assets/img/error.JPG)
+
+Post-purchase, users receive an order confirmation with a unique order number. Registered users can access their order history and receipts.
+
+![Receite](./assets/img/receites.JPG)
+
+![Receite](./assets/img/receites2.JPG)
+
+The site includes functionalities for account management, including logout, viewing past orders, and account deletion, with confirmation prompts for safety.
+
+![Sign Out](./assets/img/signout.JPG)
+
+![Delete Account](./assets/img/delete.JPG)
+
+The sign-in page provides options for new account creation and password recovery.
+
+![Sign In](./assets/img/signin.JPG)
+
+
+
 
 
 

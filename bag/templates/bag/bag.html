@@ -16,20 +16,20 @@
                         <h5 class="card-title">{{ item.product.name }}</h5>
                         <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{item.product.name}}">
                         <p class="card-text">Quantity: {{ item.quantity }}</p>
-                        <p class="card-text">Price: {{ item.product.price }}€</p>
-                        <p class="card-text">Subtotal: {{ grand_total }}€</p>
+                        <p class="card-text">Subtotal: {{ item.product.price }}€</p>
                         {% include 'includes/remove.html' with product_id=item.product.id %}
                     </div>
                 </div>
                 {% endfor %}
                 <div class="d-flex flex-column align-items-center">
+                    <p class="card-text">Total Price: {{ grand_total }}€</p>
                     <a href="{% url 'checkout' %}">
-                    <button class="cta btn mt-3 w-100 " aria-label="Click here to proceed to checkout" title="Checkout"
+                        <button class="cta btn mt-3 w-100 " aria-label="Click here to proceed to checkout" title="Checkout"
                         type="submit">
-                            Proceed to checkout
-                        </button>
-                    </a>
-                </div>
+                        Proceed to checkout
+                    </button>
+                </a>
+            </div>
             </div>
             {% else %}
             <h1 class="text-center" aria-label="Your Shopping Bag is Empty">Shopping Bag Empty</h1>

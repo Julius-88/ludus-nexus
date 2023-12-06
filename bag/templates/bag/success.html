@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% block extra_title %}| Order Confirmation{% endblock %}
 {% block content %}
-<h2>Order Confirmation</h2>
-<p>Thank you for your purchase!</p>
+<h1 class="text-center">Order Confirmation</h1>
+<p class="text-center">Thank you for your purchase!</p>
+<hr>
 {% include 'includes/summary.html' %}
 {% endblock %}
