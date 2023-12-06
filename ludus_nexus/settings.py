@@ -1,7 +1,6 @@
 import os
 import dj_database_url
 from pathlib import Path
-from . import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +19,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-julius88-ludusnexus-p1td9fp1h7v.ws-eu106.gitpod.io',
-    'ludus-nexus.herokuapp.com',
+    'ludus-nexus-04713dfe377c.herokuapp.com',
     'localhost']
 
 
