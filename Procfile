@@ -1,0 +1,1 @@
+web: gunicorn ludus_nexus.wsgi:application
