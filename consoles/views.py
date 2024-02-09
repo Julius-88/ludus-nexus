@@ -1,6 +1,10 @@
-from django.shortcuts import render
-from .models import Product
+from django.shortcuts import render, redirect
 from django.conf import settings
+from django.contrib import messages
+from django.contrib.admin.views.decorators import staff_member_required
+from django.contrib.auth.decorators import login_required
+from .models import Product
+from .forms import ProductForm
 
 # Create your views here.
 
@@ -41,3 +45,18 @@ def nintendo(request):
 def wishlist(request):
     """ A view to return the wishlist page """
     return render(request, 'consoles/wishlist.html')
+
+
+# View for Admin to add products
+@login_required
+@staff_member_required
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product added successfully!')
+            return redirect('add_product')
+    else:
+        form = ProductForm()
+    return render(request, 'consoles/add_product.html', {'form': form})

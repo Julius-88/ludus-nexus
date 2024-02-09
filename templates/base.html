@@ -96,6 +96,8 @@
                         <a class="dropdown-item {% if user.is_staff %} show {% else %} hide {% endif %}"
                             href="{% url 'admin:index' %}">Admin
                             Panel</a>
+                        <a class="dropdown-item {% if user.is_staff %} show {% else %} hide {% endif %}"
+                            href="{% url 'add_product' %}">Add Products</a>
                         <a class="dropdown-item" href="{% url 'order_history' %}" title="My Orders" aria-label="Click here to go to find your receipts">My Orders</a>
                         <a class="dropdown-item" href="{% url 'confirm_delete_account' %}" title="Delete Account" aria-label="Click here to delete your account">Delete Account</a>
                     </div>
