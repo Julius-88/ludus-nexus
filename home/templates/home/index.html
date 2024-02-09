@@ -2,6 +2,13 @@
 {% load static %}
 
 {% block content %}
+{% if messages %}
+<div class="messages">
+    {% for message in messages %}
+    <div class="{{ message.tags }} text-center alert-info"> {{ message }}</div>
+    {% endfor %}
+</div>
+{% endif %}
 <main>
     <h1 class="text-center">Welcome to Ludus Nexus!</h1>
     <p class="text-center">Dive into the heart of gaming with Ludus Nexus, your ultimate destination for

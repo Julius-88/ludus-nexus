@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import ConfirmDeleteForm
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 def index(request):
@@ -20,6 +21,7 @@ def confirm_delete_account(request):
         form = ConfirmDeleteForm(request.POST)
         if form.is_valid() and form.cleaned_data['confirm']:
             request.user.delete()
+            messages.success(request, 'Account successfully deleted.')
             return redirect('home')
     else:
         form = ConfirmDeleteForm()
