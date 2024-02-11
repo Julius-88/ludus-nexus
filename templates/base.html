@@ -56,7 +56,7 @@
         <div class=" collapse navbar-collapse justify-content-center " id="navbarToggler">
             <ul class="navbar-nav ">
                 <li class="nav-item m-1">
-                    <button id="theme-switcher" class="nav-link d-flex w-100 h-100 align-items-center p-2"
+                    <button id="theme-switcher" class="nav-link d-flex w-100 h-100 align-items-center p-2 py-3"
                         aria-label="Click here to change website colors from dark to light and back">
                         <i class="fas fa-adjust fa-lg" aria-hidden="true" title="Theme"></i>
                     </button>
@@ -87,7 +87,7 @@
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item m-1 dropdown">
-                    <button class="nav-link p-2 d-flex w-100 h-100 align-items-center dropdown-toggle"
+                    <button class="nav-link p-2 py-3 d-flex w-100 h-100 align-items-center dropdown-toggle"
                         data-toggle="dropdown" id="login-icon" aria-label="Click here to go to the account page">
                         <i class="fas fa-address-card fa-lg" aria-hidden="true" title="Account"></i>
                     </button>
@@ -98,8 +98,10 @@
                             Panel</a>
                         <a class="dropdown-item {% if user.is_staff %} show {% else %} hide {% endif %}"
                             href="{% url 'add_product' %}">Add Products</a>
-                        <a class="dropdown-item" href="{% url 'order_history' %}" title="My Orders" aria-label="Click here to go to find your receipts">My Orders</a>
-                        <a class="dropdown-item" href="{% url 'confirm_delete_account' %}" title="Delete Account" aria-label="Click here to delete your account">Delete Account</a>
+                        <a class="dropdown-item" href="{% url 'order_history' %}" title="My Orders"
+                            aria-label="Click here to go to find your receipts">My Orders</a>
+                        <a class="dropdown-item" href="{% url 'confirm_delete_account' %}" title="Delete Account"
+                            aria-label="Click here to delete your account">Delete Account</a>
                     </div>
                 </li>
                 {% else %}
@@ -116,7 +118,7 @@
                 <li class="nav-item m-1">
                     <a href="{% url 'view_bag' %}">
                         <button
-                            class="nav-link p-2 d-flex w-100 h-100 align-items-center {% if grand_total %} bag-has {% else %} shopping-cart-icon {% endif %}"
+                            class="nav-link p-2 py-3 d-flex w-100 h-100 align-items-center {% if grand_total %} bag-has {% else %} shopping-cart-icon {% endif %}"
                             aria-label="Click here to go to the shopping cart">
                             <i class="fas fa-shopping-cart fa-lg " aria-hidden="true" title="Shopping cart"></i>
                         </button>
@@ -166,7 +168,7 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
     </script>
     <!-- Stripe -->
-     <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://js.stripe.com/v3/"></script>
     <!-- Code needed to activate popovers from Bootstrap -->
     <script>
         $(document).ready(function () {

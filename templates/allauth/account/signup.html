@@ -12,7 +12,7 @@
   <p class="text-center mx-2">Already have an account? Then click here to <a href="{{ login_url }}"
       class="hover-border">sign in</a>.</p>
 
-  <form class="signup mx-3" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  <form class="signup mx-3" id="signup_form" method="POST" action="{% url 'account_signup' %}">
     {% csrf_token %}
     {{ form.as_p }}
     {% if redirect_field_value %}

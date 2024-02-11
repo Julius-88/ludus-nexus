@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block extra_title %}| Add Product{% endblock %}
+
 {% block content%}
 {% if messages %}
 <div class="messages">
@@ -9,10 +11,12 @@
     {% endfor %}
 </div>
 {% endif %}
-
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Add Product</button>
-</form>
+<section class="d-flex flex-column justify-content-center align-items-center px-5">
+    <h1 class="mb-5">Add Product</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="cta btn mx-auto d-block">Add Product</button>
+    </form>
+</section>
 {% endblock %}

@@ -81,13 +81,20 @@ a:hover {
 #id_email2,
 #id_username,
 #id_password1,
-#id_password2 {
+#id_password2,
+#id_console,
+#id_tags,
+#id_name,
+#id_description,
+#id_price,
+#id_image {
     background-color: #242526;
     padding: 5px;
     border-radius: 10px;
     border: none;
     color: #E5E5E5;
     width: 100%;
+    overflow: scroll;
 }
 
 #id_login:focus-visible,
@@ -96,8 +103,21 @@ a:hover {
 #id_email2:focus-visible,
 #id_username:focus-visible,
 #id_password1:focus-visible,
-#id_password2:focus-visible {
+#id_password2:focus-visible,
+#id_console:focus-visible,
+#id_tags,
+#id_name,
+#id_description,
+#id_price,
+#id_image {
     outline: 2px solid #A367F2;
+}
+
+#id_tags,
+#id_description {
+    scrollbar-width: thin;
+    scrollbar-color: #9747FF black;
+    border-radius: 5px;
 }
 
 /* --------------------------------------------------------------HEADER-------------------------------------------------------*/
@@ -171,10 +191,30 @@ hr {
     color: black;
 }
 
+/*------------- Light Mode Input Field and Forms ---------------*/
+
 .light-mode #id_login,
-.light-mode #id_password {
+.light-mode #id_password,
+.light-mode #id_email,
+.light-mode #id_email2,
+.light-mode #id_username,
+.light-mode #id_password1,
+.light-mode #id_password2,
+.light-mode #id_console,
+.light-mode #id_tags,
+.light-mode #id_name,
+.light-mode #id_description,
+.light-mode #id_price,
+.light-mode #id_image {
     background-color: white;
     color: #42413C;
+}
+
+.light-mode #id_tags,
+.light-mode #id_description {
+    scrollbar-width: thin;
+    scrollbar-color: #9747FF #e5e5e5;
+    border-radius: 5px;
 }
 
 /* ---------------Navbar Toggler -----------------------*/
@@ -336,4 +376,3 @@ hr {
     background-color: inherit;
     color: inherit;
 }
-
