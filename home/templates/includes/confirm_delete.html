@@ -7,7 +7,7 @@
     <h1 class="mb-5">Confirm Delete</h1>
     <p class="text-center mx-2">Are you sure you want to delete your account? This action cannot be undone.</p>
 
-    <form action="{% url 'confirm_delete_account' %}" class="signup mx-3" method="post">
+    <form action="{% url 'confirm_delete_account' %}" class="signup mx-3" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <div class="clearfix">

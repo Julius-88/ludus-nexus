@@ -6,5 +6,8 @@ urlpatterns = [
     path('xbox/', views.xbox, name="xbox"),
     path('nintendo/', views.nintendo, name="nintendo"),
     path('add_product/', views.add_product, name="add_product"),
-    path('wishlist/', views.wishlist, name="wishlist"),
+    path(
+        'delete_product/<int:product_id>/',
+        views.delete_product,
+        name="delete_product"),
 ]

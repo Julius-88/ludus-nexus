@@ -3,7 +3,7 @@
 <section class="container">
     <div class="row row-cols-1 row-cols-md-4 g-4">
         {% for product in products %}
-        <div class="col  my-2 product" data-tags="{% for tag in product.tags.all %}{{ tag.name }} {% endfor %}">
+        <div class="col my-2" data-tags="{% for tag in product.tags.all %}{{ tag.name }} {% endfor %}">
             <figure class="card h-100">
                 <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid"
                     title="{{product.name}}">
@@ -17,6 +17,11 @@
                         <span title="description">Description</span>
                     </button>
                     {% include 'includes/add.html' %}
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'delete_product' product.id %}"
+                        class="m-2 btn btn-danger delete-btn {% if user.is_staff %} show {% else %} hide {% endif %}">Delete
+                        Product</a>
+                    {% endif %}
                 </div>
             </figure>
         </div>

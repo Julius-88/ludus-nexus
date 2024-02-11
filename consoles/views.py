@@ -1,12 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.conf import settings
 from django.contrib import messages
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth.decorators import login_required
 from .models import Product
 from .forms import ProductForm
-
-# Create your views here.
 
 
 def playstation(request):
@@ -15,7 +13,7 @@ def playstation(request):
     context = {
         'products': products,
         'MEDIA_URL': settings.MEDIA_URL,
-        'console_type': 'playstation'
+        'console_type': 'playstation',
     }
     return render(request, 'consoles/playstation.html', context)
 
@@ -26,7 +24,7 @@ def xbox(request):
     context = {
         'products': products,
         'MEDIA_URL': settings.MEDIA_URL,
-        'console_type': 'xbox'
+        'console_type': 'xbox',
     }
     return render(request, 'consoles/xbox.html', context)
 
@@ -37,14 +35,9 @@ def nintendo(request):
     context = {
         'products': products,
         'MEDIA_URL': settings.MEDIA_URL,
-        'console_type': 'nintendo'
+        'console_type': 'nintendo',
     }
     return render(request, 'consoles/nintendo.html', context)
-
-
-def wishlist(request):
-    """ A view to return the wishlist page """
-    return render(request, 'consoles/wishlist.html')
 
 
 # View for Admin to add products
@@ -60,3 +53,20 @@ def add_product(request):
     else:
         form = ProductForm()
     return render(request, 'consoles/add_product.html', {'form': form})
+
+
+# View for Admin to delete products
+@login_required
+@staff_member_required
+def delete_product(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+
+    if request.method == 'POST':
+        product.delete()
+        messages.success(request, 'Product deleted successfully!')
+        return redirect('home')
+
+    return render(
+        request,
+        'consoles/delete_product.html',
+        {'product': product})

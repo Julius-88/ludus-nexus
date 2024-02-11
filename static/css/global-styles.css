@@ -319,7 +319,7 @@ hr {
 }
 
 .show {
-    display: inline;
+    display: inline-block;
 }
 
 .hide {
