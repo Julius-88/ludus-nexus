@@ -70,3 +70,23 @@ def delete_product(request, product_id):
         request,
         'consoles/delete_product.html',
         {'product': product})
+
+
+# View for Admin to edit_products
+@login_required
+@staff_member_required
+def edit_product(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product updated successfully!')
+            return redirect('home')
+    else:
+        form = ProductForm(instance=product)
+
+    return render(
+        request,
+        'consoles/edit_product.html',
+        {'form': form})

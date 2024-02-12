@@ -18,9 +18,14 @@
                     </button>
                     {% include 'includes/add.html' %}
                     {% if user.is_authenticated %}
+                    <a href="{% url 'edit_product' product.id %}"
+                        class="m-2 btn btn-secondary {% if user.is_staff %} show {% else %} hide {% endif %}">
+                        Edit Product
+                    </a>
                     <a href="{% url 'delete_product' product.id %}"
-                        class="m-2 btn btn-danger delete-btn {% if user.is_staff %} show {% else %} hide {% endif %}">Delete
-                        Product</a>
+                        class="m-2 btn btn-danger delete-btn {% if user.is_staff %} show {% else %} hide {% endif %}">
+                        Delete Product
+                    </a>
                     {% endif %}
                 </div>
             </figure>
