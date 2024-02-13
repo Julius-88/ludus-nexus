@@ -172,8 +172,15 @@
     <!-- Code needed to activate popovers from Bootstrap -->
     <script>
         $(document).ready(function () {
-            $('[data-toggle="popover"]').popover();
-        });
+                    $('[data-toggle="popover"]').popover();
+                    // Close popover on click outside
+                    $('body').on('click', function (e) {
+                            if ($('[data-toggle="popover"]').has(e.target).length === 0 &&
+                                $('.popover').has(e.target).length === 0) {
+                                $('[data-toggle="popover"]').popover('hide');
+                            };
+                        });
+                    });
     </script>
     <script src="{% static 'scripts/global.js' %}"></script>
     {% block extra_js %}

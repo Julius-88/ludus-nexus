@@ -23,3 +23,7 @@
 .light-mode .card-img-top {
     background-color: white;
 }
+
+.popover-body {
+    padding-left: 20px;
+}
