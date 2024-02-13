@@ -59,6 +59,9 @@ def process_payment(request, order_id):
             order.payment_status = 'Paid'
             order.save()
 
+            # Clear the cart from session
+            request.session['bag'] = {}
+
             # Redirect to the success page
             return redirect('success', order_id=order.id)
         except stripe.error.CardError as e:
@@ -143,9 +146,6 @@ def checkout(request):
         # Update the order total
         order.total_price = total_price
         order.save()
-
-        # Clear the cart from session
-        request.session['bag'] = {}
 
         # Redirect to payment page with the order ID
         return redirect('payment', order_id=order.id)
