@@ -27,3 +27,8 @@
 .popover-body {
     padding-left: 20px;
 }
+
+.img-fluid {
+    height: 150px;
+    object-fit: scale-down;
+}
