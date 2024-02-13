@@ -2,14 +2,14 @@
 <div class="order-summary">
     {% for item in order.orderdetails.all %}
     <div class="order-item d-flex flex-column justify-content-center align-items-center">
-        <h4 class="small m-1">Order Number: {{ order.order_number }}</h4>
+        <h2 class="small m-1">Order Number: {{ order.order_number }}</h2>
         <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="order-item-image m-2">
         <div class="order-item-details d-flex flex-column justify-content-center align-items-center m-1">
-            <h5>{{ item.product.name }}</h5>
+            <h3>{{ item.product.name }}</h3>
             <p>Quantity: {{ item.quantity }}</p>
             <p>Price: {{ item.orderdetail_total|floatformat:0 }}</p>
             <p>Date: {{ order.order_date }}</p>
-            <p>Shipping Address</p>
+            <h3>Shipping Address</h3>
             <p>Address: {{ order.address }}</p>
             <p>Post Code: {{ order.postcode }}</p>
             <p>City: {{ order.city }}</p>

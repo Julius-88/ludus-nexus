@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Order, OrderDetail, Product
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
 import stripe
@@ -64,16 +65,16 @@ def process_payment(request, order_id):
 
             # Redirect to the success page
             return redirect('success', order_id=order.id)
-        except stripe.error.CardError as e:
-            # Handle Stripe Card Error
-            context = {
-                'order_id': order_id,
-                'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
-                'error_message': e.user_message,
-            }
-            return render(request, 'bag/payment.html', context)
-
-    return redirect('success', order_id=order.id)
+        except stripe.error.StripeError as e:
+            # Handle all Stripe errors
+            err_body = e.json_body
+            err = err_body.get('error', {})
+            messages.error(request, err.get('message'))
+            # Redirect back to the payment page with Stripe's error message
+            return redirect('payment', order_id=order.id)
+    else:
+        # For non-POST requests, redirect the user back to the payment page
+        return redirect('payment', order_id=order.id)
 
 
 def add_to_bag(request, product_id):

@@ -7,6 +7,13 @@
 
 
 {% block content %}
+{% if messages %}
+<div class="messages">
+    {% for message in messages %}
+    <div class="{{ message.tags }} text-center alert-info"> {{ message }}</div>
+    {% endfor %}
+</div>
+{% endif %}
 <section class="payment-section d-flex flex-column justify-content-center h-100">
     <h1 class="mb-5 text-center">Payment Details</h1>
     <form method="POST" id="payment-form" action="{% url 'process_payment' order_id %}">

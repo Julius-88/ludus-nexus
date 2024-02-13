@@ -347,11 +347,11 @@ hr {
 }
 
 /*------------ 404 -------------------- */
-.error {
+.error404 {
     font-size: 3em;
 }
 
-.error-btn {
+.error404-btn {
     font-size: 1em;
 }
 
