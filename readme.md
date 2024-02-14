@@ -300,9 +300,14 @@ The sign-in page provides options for new account creation and password recovery
 ## HTML
 W3C Markup Validation Service, a tool for checking the markup validity of web documents in HTML, was utilized to ensure that the website conforms to web standards.
 
-**Errors in the landing page:** The validator showed the following errors,
+**The validator showed the following errors :**
 
+404 Page
 ![404 Page HTML errors](./docs/404-html-error.JPG)
+
+Home Page
+![Home Page HTML errors](./docs/home-html-error.JPG)
+
 
 ## Lighthouse
 
@@ -318,6 +323,14 @@ Lighthouse is an open-source tool for improving the quality of web pages. It pro
 **404 Page - Mobile View**
 
 ![404 Page - Mobile View](./docs/404-mobile-lighthouse.JPG)
+
+**Home Page - Desktop View**
+
+![Home Page - Desktop View](./docs/home-desktop-lighthouse.JPG)
+
+**Home Page - Mobile View**
+
+![Home Page - Mobile View](./docs/home-mobile-lighthouse.JPG)
 
 # Deployment to Heroku
 
