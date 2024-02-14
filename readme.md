@@ -413,6 +413,11 @@ There seems to be an issue with stripe code preventing me from getting 100 Acces
 **Payment Page - Mobile View**
 ![Payment Page - Mobile View](./docs/payment-mobile-lighthouse.JPG)
 
+**Success Page - Desktop View**
+![Success Page - Desktop View](./docs/success-desktop-lighthouse.JPG)
+
+**Success Page - Mobile View**
+![Success Page - Mobile View](./docs/success-mobile-lighthouse.JPG)
 
 # Deployment to Heroku
 
