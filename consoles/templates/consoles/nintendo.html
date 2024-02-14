@@ -6,10 +6,13 @@
 <meta name="keywords"
     content="Nintendo Switch, Nintendo Switch games, Nintendo games, Nintendo accessories, Nintendo Switch accessories">
 {% endblock %}
+
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'consoles/css/consoles.css' %}">
 {% endblock %}
+
 {% block extra_title %}| Nintendo{% endblock %}
+
 {% block header %}
 <a href="{% url 'nintendo' %} " aria-label="Click here on the Nintendo title to go to the nintendo page"
     title="Nintendo">
@@ -18,6 +21,7 @@
     </h1>
 </a>
 {% endblock %}
+
 {% block subnav %}
 <section id="sub-navigation" class="btn-group btn-group-sm d-flex justify-content-center align-items-center"
     role="group" aria-label="Nintendo sub-navigation. Select to filter games, consoles, or accessories.">
@@ -32,9 +36,11 @@
     </button>
 </section>
 {% endblock %}
+
 {% block content%}
 {% include "includes/items.html" %}
 {% endblock %}
+
 {% block extra_js %}
 <script src="{% static 'consoles/scripts/consoles.js' %}"></script>
 {% endblock %}

@@ -10,7 +10,6 @@ class UserProfile(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE)
     full_name = models.CharField(max_length=100)
-    newsletter_subscribed = models.BooleanField(default=False)
 
     def __str__(self):
         return self.user.username

@@ -405,3 +405,14 @@ The issue is under investigation, and a solution has not yet been implemented.
 - **Bootstrap v4.6**: Primary CSS framework used for designing the website. [getbootstrap.com](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 - **JQuery**: Utilized for JavaScript coding enhancements. [jquery.com](https://jquery.com/)
 - **Stripe**: Using Stripe as a payment system. [Stripe](https://stripe.com/docs)
+
+# Documentation and Websites Used
+ - [MDN - Event Listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+ - [MDN - DOM Introduction](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+ - [MDN - Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+ - [MDN - Storage](https://developer.mozilla.org/en-US/docs/Web/API/Storage)
+ - [MDN - Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
+ - [Django Project - Form Validation](https://docs.djangoproject.com/en/4.2/topics/forms/#:~:text=,and%20Form%20and%20field%20validation)
+ - [Django Project - Forms](https://docs.djangoproject.com/en/4.2/ref/forms/)
+ - [Django Project - Form API](https://docs.djangoproject.com/en/4.2/ref/forms/api/#:~:text=,set%20of%20data%2C%20or%20unbound)
+ - [Django Project - Form Fields](https://docs.djangoproject.com/en/4.2/ref/forms/fields/)

@@ -9,12 +9,6 @@ def index(request):
     return render(request, 'home/index.html')
 
 
-# resource
-# https://docs.djangoproject.com/en/4.2/topics/forms/#:~:text=,and%20Form%20and%20field%20validation
-# https://docs.djangoproject.com/en/4.2/ref/forms/
-# https://docs.djangoproject.com/en/4.2/ref/forms/api/#:~:text=,set%20of%20data%2C%20or%20unbound
-# https://docs.djangoproject.com/en/4.2/ref/forms/fields/
-
 @login_required
 def confirm_delete_account(request):
     if request.method == 'POST':

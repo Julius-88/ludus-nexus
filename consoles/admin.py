@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Console, Product, Tag, Wishlist
+from .models import Console, Product, Tag
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -29,4 +29,3 @@ class ProductAdmin(admin.ModelAdmin):
 admin.site.register(Console)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Tag)
-admin.site.register(Wishlist)

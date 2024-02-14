@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block extra_title %}| Shopping Bag{% endblock %}
 
 {% block content %}
@@ -8,12 +7,12 @@
     <div class="row">
         <div class="col">
             {% if bag_items %}
-            <h1 class="text-center">Shopping Bag</h1>
+            <h2 class="text-center h1">Shopping Bag</h2>
             <div class="d-block d-flex flex-column">
                 {% for item in bag_items %}
                 <div class="mb-3">
                     <div class="card-body">
-                        <h5 class="card-title">{{ item.product.name }}</h5>
+                        <h3 class="card-title h5">{{ item.product.name }}</h3>
                         <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{item.product.name}}">
                         <p class="card-text">Quantity: {{ item.quantity }}</p>
                         <p class="card-text">Subtotal: {{ item.product.price }}€</p>
@@ -23,13 +22,11 @@
                 {% endfor %}
                 <div class="d-flex flex-column align-items-center">
                     <p class="card-text">Total Price: {{ grand_total }}€</p>
-                    <a href="{% url 'checkout' %}">
-                        <button class="cta btn mt-3 w-100 " aria-label="Click here to proceed to checkout" title="Checkout"
-                        type="submit">
-                        Proceed to checkout
-                    </button>
-                </a>
-            </div>
+                    <a href="{% url 'checkout' %}" class="cta btn mt-3 w-100 " aria-label="Proceed to checkout"
+                        title="Checkout">
+                        Proceed to Checkout
+                    </a>
+                </div>
             </div>
             {% else %}
             <h1 class="text-center" aria-label="Your Shopping Bag is Empty">Shopping Bag Empty</h1>

@@ -6,10 +6,13 @@
 <meta name="keywords"
     content="Xbox, Xbox Series X, Xbox Series S, Xbox games, Xbox Series X games, Xbox Series S games, Xbox accessories, Xbox Series X accessories, Xbox Series S accessories">
 {% endblock %}
+
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'consoles/css/consoles.css' %}">
 {% endblock %}
+
 {% block extra_title %}| Xbox{% endblock %}
+
 {% block header %}
 <a href="{% url 'xbox' %} " aria-label="Click here on the Xbox title to go to the xbox page" title="Xbox">
     <h1 class="d-flex justify-content-center align-items-center p-4 xbox">
@@ -17,6 +20,7 @@
     </h1>
 </a>
 {% endblock %}
+
 {% block subnav %}
 <section id="sub-navigation" class="btn-group btn-group-sm d-flex justify-content-center align-items-center"
     role="group" aria-label="Xbox sub-navigation. Select to filter games, consoles, or accessories.">
@@ -31,9 +35,11 @@
     </button>
 </section>
 {% endblock %}
+
 {% block content%}
 {% include "includes/items.html" %}
 {% endblock %}
+
 {% block extra_js %}
 <script src="{% static 'consoles/scripts/consoles.js' %}"></script>
 {% endblock %}

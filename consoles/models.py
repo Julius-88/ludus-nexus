@@ -26,13 +26,3 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
-
-class Wishlist(models.Model):
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE)
-    products = models.ManyToManyField(Product)
-
-    def __str__(self):
-        return self.user.username

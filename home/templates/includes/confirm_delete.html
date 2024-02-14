@@ -4,10 +4,10 @@
 
 {% block content %}
 <section class="d-flex flex-column justify-content-center align-items-center h-100">
-    <h1 class="mb-5">Confirm Delete</h1>
+    <h2 class="mb-5 h1">Confirm Delete</h2>
     <p class="text-center mx-2">Are you sure you want to delete your account? This action cannot be undone.</p>
 
-    <form action="{% url 'confirm_delete_account' %}" class="signup mx-3" method="POST">
+    <form action="{% url 'confirm_delete_account' %}" class="mx-3 text-center" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <div class="clearfix">
