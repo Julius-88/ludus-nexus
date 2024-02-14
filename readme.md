@@ -295,6 +295,26 @@ The sign-in page provides options for new account creation and password recovery
 
 ![Sign In](./docs/signin.JPG)
 
+# Testing
+
+## HTML
+W3C Markup Validation Service, a tool for checking the markup validity of web documents in HTML, was utilized to ensure that the website conforms to web standards.
+
+**Errors in the landing page:** The validator showed the following errors,
+
+![404 Page HTML errors](./docs/404-html-error.JPG)
+
+## Lighthouse
+
+Lighthouse is an open-source tool for improving the quality of web pages. It provides audits for performance, accessibility, progressive web apps, and more. Below are the Lighthouse test results for the Ludus Nexus website.
+
+**404 Page - Desktop View**
+
+![404 Page - Desktop View](./docs/404-desktop-lighthouse.JPG)
+
+**404 Page - Mobile View**
+
+![404 Page - Mobile View](./docs/404-mobile-lighthouse.JPG)
 
 # Deployment to Heroku
 
