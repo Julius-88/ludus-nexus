@@ -325,6 +325,8 @@ Payment Page - Warning
 Add Product - Warning
 ![Add Product HTML warning](./docs/add-product-html-warning.JPG)
 
+Delete Product - Error/Warning
+![Delete Product HTML error/warning](./docs/delete-product-html-error.JPG)
 
 ## Lighthouse
 
@@ -433,6 +435,12 @@ There seems to be an issue with stripe code preventing me from getting 100 Acces
 
 **Edit Product Page - Mobile View**
 ![Edit Product Page - Mobile View](./docs/edit-product-mobile-lighthouse.JPG)
+
+**Delete Product Page - Desktop View**
+![Delete Product Page - Desktop View](./docs/delete-product-desktop-lighthouse.JPG)
+
+**Delete Product Page - Mobile View**
+![Delete Product Page - Mobile View](./docs/delete-product-mobile-lighthouse.JPG)
 
 ## Python
 All Python code is written to the standards of PEP8. It has been double checked using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/#)
