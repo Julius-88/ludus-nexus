@@ -328,6 +328,10 @@ Add Product - Warning
 Delete Product - Error/Warning
 ![Delete Product HTML error/warning](./docs/delete-product-html-error.JPG)
 
+**Success:** No other pages showed any issues, and after having solved the minor issues shown we are met by a success message,
+
+![Success](./docs/html-validation-success.JPG)
+
 ## Lighthouse
 
 Lighthouse is an open-source tool for improving the quality of web pages. It provides audits for performance, accessibility, progressive web apps, and more. Below are the Lighthouse test results for the Ludus Nexus website.
