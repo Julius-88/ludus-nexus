@@ -332,6 +332,16 @@ Delete Product - Error/Warning
 
 ![Success](./docs/html-validation-success.JPG)
 
+## CSS
+W3C CSS validation was used to validate the CSS of this project. No errors where found.
+
+![Success](./docs/css-validation-success.JPG)
+
+## Python
+All Python code is written to the standards of PEP8. It has been double checked using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/#)
+
+![Linther](./docs/python-validation.JPG)
+
 ## Lighthouse
 
 Lighthouse is an open-source tool for improving the quality of web pages. It provides audits for performance, accessibility, progressive web apps, and more. Below are the Lighthouse test results for the Ludus Nexus website.
@@ -445,11 +455,6 @@ There seems to be an issue with stripe code preventing me from getting 100 Acces
 
 **Delete Product Page - Mobile View**
 ![Delete Product Page - Mobile View](./docs/delete-product-mobile-lighthouse.JPG)
-
-## Python
-All Python code is written to the standards of PEP8. It has been double checked using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/#)
-
-![Linther](./docs/python-validation.JPG)
 
 # Deployment to Heroku
 

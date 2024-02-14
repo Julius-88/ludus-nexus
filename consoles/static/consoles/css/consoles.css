@@ -1,3 +1,4 @@
+/*-------------- Buttons -----------------*/
 .btn {
     color: inherit;
 }
@@ -10,6 +11,7 @@
     box-shadow: 0 0 0 0.2rem #A367F2
 }
 
+/*-------------- Products ----------------*/
 .card {
     background-color: transparent;
 }
@@ -22,10 +24,6 @@
 .light-mode .card-body,
 .light-mode .card-img-top {
     background-color: white;
-}
-
-.popover-body {
-    padding-left: 20px;
 }
 
 .img-fluid {

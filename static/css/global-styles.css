@@ -326,6 +326,8 @@ hr {
     display: none;
 }
 
+/*------------------------------- Footer -------------------------*/
+
 /*------------ MODAL -------------------- */
 
 .modal-backdrop {
@@ -340,19 +342,6 @@ hr {
 .modal-content {
     background-color: #242526;
     color: white;
-}
-
-/*------------ 404 -------------------- */
-.error404 {
-    font-size: 3em;
-}
-
-.error404-btn {
-    font-size: 1em;
-}
-
-.jumbotron {
-    background-color: inherit;
 }
 
 /*------------- Mailchimp--------------- */
@@ -375,4 +364,17 @@ hr {
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
     background-color: inherit;
     color: inherit;
+}
+
+/*------------ 404 -------------------- */
+.error404 {
+    font-size: 3em;
+}
+
+.error404-btn {
+    font-size: 1em;
+}
+
+.jumbotron {
+    background-color: inherit;
 }
