@@ -434,6 +434,11 @@ There seems to be an issue with stripe code preventing me from getting 100 Acces
 **Edit Product Page - Mobile View**
 ![Edit Product Page - Mobile View](./docs/edit-product-mobile-lighthouse.JPG)
 
+## Python
+All Python code is written to the standards of PEP8. It has been double checked using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/#)
+
+![Linther](./docs/python-validation.JPG)
+
 # Deployment to Heroku
 
 This README outlines the steps necessary to deploy an application to Heroku. It is designed as a guide for users looking to deploy their own applications using Heroku's platform.
@@ -493,3 +498,9 @@ This README outlines the steps necessary to deploy an application to Heroku. It 
  - [Django Project - Forms](https://docs.djangoproject.com/en/4.2/ref/forms/)
  - [Django Project - Form API](https://docs.djangoproject.com/en/4.2/ref/forms/api/#:~:text=,set%20of%20data%2C%20or%20unbound)
  - [Django Project - Form Fields](https://docs.djangoproject.com/en/4.2/ref/forms/fields/)
+- [Django Project - Querysets](https://docs.djangoproject.com/en/3.2/ref/models/querysets/)
+- [Django Project - Prefetch](https://docs.djangoproject.com/en/3.2/ref/models/querysets/#prefetch-related)
+- [Stripe](https://stripe.com/docs)
+- [Stripe - API](https://stripe.com/docs/api)
+- [Stripe - Errors](https://stripe.com/docs/api/errors)
+

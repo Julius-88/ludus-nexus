@@ -2,7 +2,7 @@ import os
 import dj_database_url
 from pathlib import Path
 if os.path.isfile('env.py'):
-    import env # noqa
+    import env  # noqa
 
 # Set to True when in development, False in production
 development = os.environ.get('DEVELOPMENT', False)

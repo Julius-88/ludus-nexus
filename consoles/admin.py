@@ -10,10 +10,6 @@ class ProductAdmin(admin.ModelAdmin):
         'display_tags'
     )
 
-#     Resources for QuerySet
-#     https://docs.djangoproject.com/en/3.2/ref/models/querysets/
-#     https://docs.djangoproject.com/en/3.2/ref/models/querysets/#prefetch-related
-
     def get_queryset(self, request):
         """Prefetch the related tags to optimize queries"""
         queryset = super().get_queryset(request)
