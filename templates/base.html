@@ -30,14 +30,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %} ">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
     <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
-    <!-- <link rel="manifest" href="{% static 'img/site.webmanifest' %}"> -->
     {% block extra_css %}
     {% endblock %}
     <title>Ludus Nexus {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body class="dark-mode d-flex flex-column min-vh-100"
-    aria-labelledby="navigation-bar privacy-policy facebook newsletter">
+<body class="dark-mode d-flex flex-column min-vh-100" aria-labelledby="navigation-bar facebook">
 
     <header>
         {% block header %}
@@ -62,8 +60,7 @@
                     </button>
                 </li>
                 <li class="nav-item m-1">
-                    <a href="{% url 'home' %}" class="nav-link p-2 h-100" id="home-icon"
-                        aria-label="Home page">
+                    <a href="{% url 'home' %}" class="nav-link p-2 h-100" id="home-icon" aria-label="Home page">
                         <i class="fas fa-home fa-lg" aria-hidden="true" title="Home"></i>
                     </a>
                 </li>
@@ -74,14 +71,13 @@
                     </a>
                 </li>
                 <li class="nav-item m-1">
-                    <a href="{% url 'xbox' %}" class="nav-link xbox p-2 h-100"
-                        aria-label="Xbox page" title="xbox">
+                    <a href="{% url 'xbox' %}" class="nav-link xbox p-2 h-100" aria-label="Xbox page" title="xbox">
                         Xbox
                     </a>
                 </li>
                 <li class="nav-item m-1">
-                    <a href="{% url 'nintendo' %}" class="nav-link nintendo p-2 h-100"
-                        aria-label="Nintendo page" title="Nintendo">
+                    <a href="{% url 'nintendo' %}" class="nav-link nintendo p-2 h-100" aria-label="Nintendo page"
+                        title="Nintendo">
                         Nintendo
                     </a>
                 </li>
@@ -91,7 +87,7 @@
                         data-toggle="dropdown" id="login-icon" aria-label="Account page">
                         <i class="fas fa-address-card fa-lg" aria-hidden="true" title="Account"></i>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu">
                         <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
                         <a class="dropdown-item {% if user.is_staff %} show {% else %} hide {% endif %}"
                             href="{% url 'admin:index' %}">Admin
@@ -134,7 +130,7 @@
         <hr>
         <section class="d-flex flex-column flex-md-row">
             <div class="col-md-3">
-                <h2 class="h4" id="privacy-policy">Information</h2>
+                <h2 class="h4">Information</h2>
                 {% include "policy.html" %}
             </div>
             <div class="col-md-3">
@@ -152,7 +148,7 @@
                 </a>
             </div>
             <div class="col-md-3">
-                <h2 class="h4" id="newsletter">Stay Updated</h2>
+                <h2 class="h4">Stay Updated</h2>
                 {% include "newsletter.html" %}
             </div>
         </section>
