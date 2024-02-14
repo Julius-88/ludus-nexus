@@ -428,6 +428,12 @@ There seems to be an issue with stripe code preventing me from getting 100 Acces
 **Add Product Page - Mobile View**
 ![Add Product Page - Mobile View](./docs/add-product-mobile-lighthouse.JPG)
 
+**Edit Product Page - Desktop View**
+![Edit Product Page - Desktop View](./docs/edit-product-desktop-lighthouse.JPG)
+
+**Edit Product Page - Mobile View**
+![Edit Product Page - Mobile View](./docs/edit-product-mobile-lighthouse.JPG)
+
 # Deployment to Heroku
 
 This README outlines the steps necessary to deploy an application to Heroku. It is designed as a guide for users looking to deploy their own applications using Heroku's platform.
