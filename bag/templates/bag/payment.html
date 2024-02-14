@@ -28,14 +28,16 @@
                 title="Submit Payment">
                 Submit Payment
             </button>
-            <a href="{% url 'view_bag' %}" class="hover-border">Go back to Shopping Cart</a>
+            <a href="{% url 'view_bag' %}" class="hover-border">
+                Go back to Shopping Cart
+            </a>
         </div>
     </form>
 </section>
 {% endblock %}
 
 {% block extra_js %}
-<script type="text/javascript">
+<script>
     var stripePublicKey = "{{ stripe_public_key }}";
 </script>
 <script src="{% static 'bag/scripts/stripe.js' %}"></script>

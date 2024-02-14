@@ -302,6 +302,8 @@ W3C Markup Validation Service, a tool for checking the markup validity of web do
 
 **The validator showed the following errors :**
 
+**Note:** I am leaving all the warnings about misuse of aria-label. Since I dont think its true. I have made a report to them.
+
 404 Page - Errors
 ![404 Page HTML errors](./docs/404-html-error.JPG)
 
@@ -309,17 +311,16 @@ Home Page - Errors
 ![Home Page HTML errors](./docs/home-html-error.JPG)
 
 *Newsletter Page - It is warning against misuse of aria-labels but the code is from Mailchimp and it wont work as intended without it.*
-
 ![Newsletter Page HTML warning](./docs/newsletter-html-warning.JPG)
 
 Product Pages - Errors
-
 ![Items Page HTML errors](./docs/items-html-error.JPG)
 
 Product Pages - Warnings
-
 ![Items Page HTML warning](./docs/items-html-warning.JPG)
 
+Payment Page - Warning
+![Payment Page HTML warning](./docs/payment-html-warning.JPG)
 
 
 ## Lighthouse
@@ -400,6 +401,17 @@ Lighthouse is an open-source tool for improving the quality of web pages. It pro
 
 **Checkout Page - Mobile View**
 ![Checkout Page - Mobile View](./docs/checkout-mobile-lighthouse.JPG)
+
+**Payment Page - Desktop View**
+![Payment Page - Desktop View](./docs/payment-desktop-lighthouse.JPG)
+
+**Payment Page - Desktop View Stripe**
+![Payment Page - Desktop View](./docs/payment-desktop-lighthouse-stripe.JPG)
+
+There seems to be an issue with stripe code preventing me from getting 100 Accessibility
+
+**Payment Page - Mobile View**
+![Payment Page - Mobile View](./docs/payment-mobile-lighthouse.JPG)
 
 
 # Deployment to Heroku
