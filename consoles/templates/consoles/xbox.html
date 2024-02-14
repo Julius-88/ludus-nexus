@@ -12,16 +12,23 @@
 {% block extra_title %}| Xbox{% endblock %}
 {% block header %}
 <a href="{% url 'xbox' %} " aria-label="Click here on the Xbox title to go to the xbox page" title="Xbox">
-    <h1 class="d-flex justify-content-center align-items-center p-4 xbox">Xbox
+    <h1 class="d-flex justify-content-center align-items-center p-4 xbox">
+        Xbox
     </h1>
 </a>
 {% endblock %}
 {% block subnav %}
 <section id="sub-navigation" class="btn-group btn-group-sm d-flex justify-content-center align-items-center"
     role="group" aria-label="Xbox sub-navigation. Select to filter games, consoles, or accessories.">
-    <button type="button" class="btn-sm subnav-btn xbox rounded-0" data-subnav="Game" title="Games">Games</button>
-    <button type="button" class="btn-sm subnav-btn xbox rounded-0 mx-1" data-subnav="Console" title="Consoles">Consoles</button>
-    <button type="button" class="btn-sm subnav-btn xbox rounded-0" data-subnav="Accessory" title="Accessories">Accessories</button>
+    <button type="button" class="btn-sm subnav-btn xbox rounded-0" data-subnav="Game" title="Games">
+        Games
+    </button>
+    <button type="button" class="btn-sm subnav-btn xbox rounded-0 mx-1" data-subnav="Console" title="Consoles">
+        Consoles
+    </button>
+    <button type="button" class="btn-sm subnav-btn xbox rounded-0" data-subnav="Accessory" title="Accessories">
+        Accessories
+    </button>
 </section>
 {% endblock %}
 {% block content%}

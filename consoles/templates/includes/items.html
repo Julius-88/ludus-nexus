@@ -8,12 +8,12 @@
                 <figure class="mb-0">
                     <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid"
                         title="{{product.name}}">
-                    <figcaption class="card-body ">
-                        <div class="card-title">{{product.name}}</div>
-                        <p class="card-text">{{product.price}} <span class="vertical-align">&euro;</span></p>
+                    <figcaption class="card-body">
+                        <h2 class="card-title h5 text-center">{{product.name}}</h2>
+                        <p class="card-text text-center">Price: {{product.price}} <span class="vertical-align">&euro;</span></p>
                     </figcaption>
                 </figure>
-                <div class="card-footer">
+                <div class="card-footer d-flex flex-column align-items-center">
                     <button type="button" class="btn btn-sm {{ console_type }}" data-container="body"
                         data-toggle="popover" data-placement="bottom" data-html="true"
                         data-content="{{product.description}}">
