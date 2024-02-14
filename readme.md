@@ -302,15 +302,25 @@ W3C Markup Validation Service, a tool for checking the markup validity of web do
 
 **The validator showed the following errors :**
 
-404 Page
+404 Page - Errors
 ![404 Page HTML errors](./docs/404-html-error.JPG)
 
-Home Page
+Home Page - Errors
 ![Home Page HTML errors](./docs/home-html-error.JPG)
 
-Newsletter Page - It is warning against misuse of aria-labels but the code is from Mailchimp and it wont work as intended without it.
+*Newsletter Page - It is warning against misuse of aria-labels but the code is from Mailchimp and it wont work as intended without it.*
 
 ![Newsletter Page HTML warning](./docs/newsletter-html-warning.JPG)
+
+Product Pages - Errors
+
+![Items Page HTML errors](./docs/items-html-error.JPG)
+
+Product Pages - Warnings
+
+![Items Page HTML warning](./docs/items-html-warning.JPG)
+
+
 
 ## Lighthouse
 
@@ -334,6 +344,14 @@ Lighthouse is an open-source tool for improving the quality of web pages. It pro
 **Home Page - Mobile View**
 
 ![Home Page - Mobile View](./docs/home-mobile-lighthouse.JPG)
+
+**Product Page - Desktop View**
+
+![Product Page - Desktop View](./docs/items-desktop-lighthouse.JPG)
+
+**Product Page - Mobile View**
+
+![Product Page - Mobile View](./docs/items-mobile-lighthouse.JPG)
 
 # Deployment to Heroku
 
