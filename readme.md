@@ -308,6 +308,9 @@ W3C Markup Validation Service, a tool for checking the markup validity of web do
 
 Lighthouse is an open-source tool for improving the quality of web pages. It provides audits for performance, accessibility, progressive web apps, and more. Below are the Lighthouse test results for the Ludus Nexus website.
 
+**Chrome is blocking third-party cookies to protect user data from cross-site tracking. This is preventing me from getting full marks in lighthouse. It is blocking stripe**
+
+
 **404 Page - Desktop View**
 
 ![404 Page - Desktop View](./docs/404-desktop-lighthouse.JPG)
