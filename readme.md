@@ -377,6 +377,12 @@ Lighthouse is an open-source tool for improving the quality of web pages. It pro
 **Sign Out Page - Mobile View**
 ![Sign Out Page - Mobile View](./docs/signout-mobile-lighthouse.JPG)
 
+**Order History Page - Desktop View**
+![Order History Page - Desktop View](./docs/order-history-desktop-lighthouse.JPG)
+
+**Order History Page - Mobile View**
+![Order History Page - Mobile View](./docs/order-history-mobile-lighthouse.JPG)
+
 
 # Deployment to Heroku
 
