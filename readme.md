@@ -342,6 +342,9 @@ All Python code is written to the standards of PEP8. It has been double checked 
 
 ![Linther](./docs/python-validation.JPG)
 
+## Responsivity
+The website's responsivity was manually checked through Chrome DevTools and on my Samsung S9+.
+
 ## Lighthouse
 
 Lighthouse is an open-source tool for improving the quality of web pages. It provides audits for performance, accessibility, progressive web apps, and more. Below are the Lighthouse test results for the Ludus Nexus website.
