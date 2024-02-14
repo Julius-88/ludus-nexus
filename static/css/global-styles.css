@@ -342,10 +342,6 @@ hr {
     color: white;
 }
 
-.jumbotron {
-    background-color: inherit;
-}
-
 /*------------ 404 -------------------- */
 .error404 {
     font-size: 3em;
@@ -353,6 +349,10 @@ hr {
 
 .error404-btn {
     font-size: 1em;
+}
+
+.jumbotron {
+    background-color: inherit;
 }
 
 /*------------- Mailchimp--------------- */

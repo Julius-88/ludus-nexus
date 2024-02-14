@@ -4,6 +4,11 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="404 Not Found - The page you are looking for does not exist or has been moved.">
+    <meta name="robots" content="noindex">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -19,18 +24,17 @@
 
 <body class="dark-mode">
     <div class="jumbotron jumbotron-fluid">
-        <h1 class="display-3 d-flex justify-content-center p-2 pl-5 ml-5">PAGE NOT WORKING</h1>
+        <h1 class="display-3 text-center">PAGE NOT WORKING</h1>
         <hr>
         <div class="d-flex flex-column align-items-center error404 container ">
-            <p>
+            <p class="text-center">
                 There seems to be something wrong with the page!
                 <br>
                 Click on the button below to go back to the home page.
             </p>
-            <a href="{% url 'home' %}">
-                <button type="button" class="btn cta error404-btn my-4" title="Home"
-                    aria-label="Click here to return to home page">
-                    Home</button></a>
+            <button type="button" class="btn cta error404-btn my-4" title="Home" aria-label="Home page">
+                <a href="{% url 'home' %}">Home</a>
+            </button>
         </div>
     </div>
 </body>
