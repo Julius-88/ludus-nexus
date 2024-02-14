@@ -198,12 +198,7 @@ This simple yet effective use of local storage ensures that users enjoy a tailor
 ![Light Theme](./docs/theme-light.JPG)
 
 # Brand Link
-The brand title changes depending on which page you are, in order to highlight for the user where they are. 
-
-It also doubles as a link to the page they are on. 
-If they click on the playstation brand title they will return to the playstation page. 
-
-It was designed this way for better navigation on mobile phone.
+The header dynamically adjusts based on the current page, ensuring a seamless experience across devices in addition to enabling the mobile users to reset the view and see all available products with ease.
 
 ![Ludus Nexus Brand Link](./docs/brand-icon.JPG)
 ![Playstation Brand Link](./docs/brand-icon-ps.JPG)
@@ -223,12 +218,6 @@ Visitors to Ludus Nexus can easily explore a wide range of gaming products tailo
 
 ![Description Button](./docs/description-btn.JPG)
 
-- **Product Header:** The header dynamically adjusts based on the current page, ensuring a seamless experience across devices in addition to enabling the mobile users to reset the view and see all available products with ease.
-
-![Xbox Header](./docs/xbox-product-page.JPG)
-
-![Nintendo Header Mobile](./docs/nintendo-product-page.JPG)
-
 # Staff Registration and Management
 
 **Staff:** A staff can be registered by an existing admin. This registration can only be done from Django Admin Panel.
@@ -240,7 +229,7 @@ Once the user is created, you are directed to a more detailed view, where you ca
 ![User Detail](./docs/admin-user-detail.JPG)
 ![User Detail Two](./docs/admin-user-detail2.JPG)
 
-The staff member can log-in to their account through the website via the regular login button in the navbar which users also have access to. The sign-in also has a remember me tickbox.
+The staff member can log-in to their account through the website via the regular login button in the navbar which users also have access to. The sign-in also has a remember me tickbox. And it allows for the creation of new accounts.
 
 ![Sign In](./docs/sign-in-page.JPG)
 
@@ -248,14 +237,26 @@ Once they are logged in, they can access the Django Admin panel via the previous
 
 ![Admin Panel](./docs/admin-panel.JPG)
 
-Once logged in depending on their permissions they have access to all content through the databases.
+The admin can choose to either add products through the admin panel
 
 ![Admin Databases](./docs/admin-database.JPG)
-![Add Product](./docs/add-product.JPG)
+![Add Product via admin panel](./docs/add-product.JPG)
+
+Or add a button via 'Add Products" button inside the account button. This button will only be available to admins.
+
+![Add Product via website](./docs/add-product-via-account-button.JPG)
+
+If he chooses to add a product via the webpage, he will be routed to another page called 'Add Product'.
+
+Here they can choose all the relevant categories and upload a picture, just like in admin panel.
+
+![Add Product Page](./docs/add-product-webpage.JPG)
+
+They can also choose to either edit or delete a product via two buttons beneath each product, which only the admin can see.
+
+![Manipulate Products](./docs/manipulate-products.JPG)
 
 All changes made will show immediately on page.
-
-![Added Product](./docs/added-product.JPG)
 
 # User Experience
 
@@ -270,29 +271,28 @@ The shopping cart icon in the navbar changes to purple when items are added, sig
 
 ![Shopping Cart Icon](./docs/shopping-cart-icon.JPG)
 
-The shopping bag page allows users to review their selections, adjust quantities, remove items, and see the subtotal for each product and the total cost.
-
-![Shopping](./docs/shopping.JPG)
+The shopping bag page allows users to review their selections, remove items, and see the subtotal for each product and the total cost.
 
 ![Shopping Bag](./docs/shopping-bag.JPG)
 
-![Shopping Bag Two](./docs/shopping-bag2.JPG)
-
-A straightforward checkout process where users fill in shipping details.
+Once they are done, they can click on the button below to continue to the checkout page.
+The checkout page is a straightforward process where users fill in their shipping details. It also has a button called 'Adjust Order'. Which takes them back to the checkout page.
 
 ![Checkout](./docs/checkout.JPG)
 
-Stripe integration is used for secure payment processing. The interface provides feedback for successful transactions and input errors.
+Stripe integration is used for secure payment processing. The interface provides feedback for successful transactions and input errors. There is also a button below the cta, that takes them back to the shopping cart.
 
 ![Payment](./docs/payment.JPG)
-
-![Success](./docs/success.JPG)
 
 ![Success Stripe](./docs/success-payment.JPG)
 
 ![Input Error](./docs/error.JPG)
 
-Post-purchase, users receive an order confirmation with a unique order number. Registered users can access their order history and receipts.
+Once the purchase goes through they will be taken to the 'Order Confirmation' page. Where they will be able to see everything all relevant information.
+
+![Order Confirmation](./docs/order-confirmation.JPG)
+
+They can view their order at any time through their account button via a button called 'My Orders'.
 
 ![Receite](./docs/receites.JPG)
 
@@ -304,9 +304,15 @@ The site includes functionalities for account management, including logout, view
 
 ![Delete Account](./docs/delete.JPG)
 
-The sign-in page provides options for new account creation and password recovery.
+A new account can be created via a button called 'Create Account' in the login page. 
 
-![Sign In](./docs/signin.JPG)
+![Sign In](./docs/sign-up-page.JPG)
+
+A confirmation message will be shown at the top of relative pages when an action has been made, such as signing in or deleting an account.
+
+![Sign In Message](./docs/sign-in-message.JPG)
+
+![Delete Account](./docs/delete-account-confirmation.JPG)
 
 # Testing
 

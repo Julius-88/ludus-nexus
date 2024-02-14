@@ -5,6 +5,10 @@
 {% block content %}
 <h2 class="text-center h1">Order Confirmation</h2>
 <p class="text-center">Thank you for your purchase!</p>
+<p class="text-center alert-warning">
+    <strong>Notice:</strong>This order confirmation is only visible now and will not be saved unless your logged in. You
+    will need to manually save or note this information. It will not be retrievable once you leave this page.
+</p>
 <hr>
 {% include 'includes/summary.html' %}
 {% endblock %}
