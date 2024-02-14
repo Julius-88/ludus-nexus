@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /bag/
+Disallow: /consoles/add_product/
+Disallow: /consoles/edit_product/
+Disallow: /consoles/delete_product/
+Sitemap: https://ludus-nexus-04713dfe377c.herokuapp.com/sitemap.xml
