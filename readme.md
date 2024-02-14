@@ -308,6 +308,9 @@ W3C Markup Validation Service, a tool for checking the markup validity of web do
 Home Page
 ![Home Page HTML errors](./docs/home-html-error.JPG)
 
+Newsletter Page - It is warning against misuse of aria-labels but the code is from Mailchimp and it wont work as intended without it.
+
+![Newsletter Page HTML warning](./docs/newsletter-html-warning.JPG)
 
 ## Lighthouse
 
