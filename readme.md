@@ -197,6 +197,19 @@ This simple yet effective use of local storage ensures that users enjoy a tailor
 ![Dark Theme](./docs/theme-dark.JPG)
 ![Light Theme](./docs/theme-light.JPG)
 
+# Brand Link
+The brand title changes depending on which page you are, in order to highlight for the user where they are. 
+
+It also doubles as a link to the page they are on. 
+If they click on the playstation brand title they will return to the playstation page. 
+
+It was designed this way for better navigation on mobile phone.
+
+![Ludus Nexus Brand Link](./docs/brand-icon.JPG)
+![Playstation Brand Link](./docs/brand-icon-ps.JPG)
+![Xbox Brand Link](./docs/brand-icon-xbox.JPG)
+![Nintendo Brand Link](./docs/brand-icon-nintendo.JPG)
+
 # Products
 Visitors to Ludus Nexus can easily explore a wide range of gaming products tailored for Playstation, Xbox, and Nintendo, directly accessible from the navbar.
 
