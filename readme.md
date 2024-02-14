@@ -322,6 +322,9 @@ Product Pages - Warnings
 Payment Page - Warning
 ![Payment Page HTML warning](./docs/payment-html-warning.JPG)
 
+Add Product - Warning
+![Add Product HTML warning](./docs/add-product-html-warning.JPG)
+
 
 ## Lighthouse
 
@@ -418,6 +421,12 @@ There seems to be an issue with stripe code preventing me from getting 100 Acces
 
 **Success Page - Mobile View**
 ![Success Page - Mobile View](./docs/success-mobile-lighthouse.JPG)
+
+**Add Product Page - Desktop View**
+![Add Product Page - Desktop View](./docs/add-product-desktop-lighthouse.JPG)
+
+**Add Product Page - Mobile View**
+![Add Product Page - Mobile View](./docs/add-product-mobile-lighthouse.JPG)
 
 # Deployment to Heroku
 
