@@ -353,6 +353,13 @@ Lighthouse is an open-source tool for improving the quality of web pages. It pro
 
 ![Product Page - Mobile View](./docs/items-mobile-lighthouse.JPG)
 
+**Sign In Page - Desktop View**
+![Sign In Page - Desktop View](./docs/signin-desktop-lighthouse.JPG)
+
+**Sign In Page - Mobile View**
+![Sign In Page - Mobile View](./docs/signin-mobile-lighthouse.JPG)
+
+
 # Deployment to Heroku
 
 This README outlines the steps necessary to deploy an application to Heroku. It is designed as a guide for users looking to deploy their own applications using Heroku's platform.
@@ -394,10 +401,6 @@ This README outlines the steps necessary to deploy an application to Heroku. It 
 1. **Mailchimp Subscription Messages Bug:** The Mailchimp subscription form messages (success, error, etc.) do not reset after the modal is closed; they persist until the page is fully reloaded. Despite attempts to override Mailchimp's JavaScript functionality to reset these messages, the issue remains unresolved. The bug has been acknowledged and requires further investigation.
 
 ![Mailchimp code](./docs/mailchimp-bug.JPG)
-
-2. **Favicon.io - 401 Error Issue:** Recently, the favicon icons for the website have stopped loading, and a "401 Error" is being displayed in the browser's console. This issue occurred without any known changes to the static files or their configurations in Django.
-This error prevents the favicon from being displayed in browser tabs, impacting the visual identification of the site.
-The issue is under investigation, and a solution has not yet been implemented.
 
 # Resources
 - **Favicon.io**: Used for generating favicon images. [favicon.io](https://favicon.io/favicon-converter/)
