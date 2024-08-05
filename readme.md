@@ -1,6 +1,8 @@
 # Ludus Nexus: The Console Gaming Hub
 Ludus Nexus is the go-to destination for console gamers, gaming novices, and anyone looking to find the perfect gaming-related gift. Our site is dedicated to simplifying your search for information, games, accessories, and the latest in console gaming. Designed for clarity and ease of navigation, we bring the vast gaming landscape right to your fingertips.
 
+Click [here](https://ludus-nexus-04713dfe377c.herokuapp.com/) to view website!
+
 ## For Gamers and Beyond
 Ludus Nexus caters to the needs of avid gamers and casual visitors alike. We aim to create an inviting environment where discovering your next gaming experience or locating the ideal accessory is both straightforward and enjoyable. Our platform is a testament to our belief in a user-friendly experience that welcomes everyone, no matter their level of engagement with gaming.
 
